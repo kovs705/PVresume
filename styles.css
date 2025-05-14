@@ -39,6 +39,50 @@
         color: var(--text-color);
     }
 
+    /* Section headers */
+    .bento-item h1,
+    .bento-item h2 {
+        text-shadow: 0 0 20px rgba(207, 102, 121, 0.3),
+                     0 0 40px rgba(207, 102, 121, 0.2);
+        transition: text-shadow var(--transition-speed);
+    }
+
+    .bento-item:hover h1,
+    .bento-item:hover h2 {
+        text-shadow: 0 0 30px rgba(207, 102, 121, 0.4),
+                     0 0 60px rgba(207, 102, 121, 0.3);
+    }
+
+    /* About section specific */
+    #about {
+        box-shadow: 0 0 30px rgba(207, 102, 121, 0.2),
+                    0 0 60px rgba(207, 102, 121, 0.1);
+        transition: all var(--transition-speed);
+    }
+
+    #about:hover {
+        box-shadow: 0 0 40px rgba(207, 102, 121, 0.3),
+                    0 0 80px rgba(207, 102, 121, 0.2);
+        transform: translateY(-5px);
+    }
+
+    #about h1 {
+        font-size: 2.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #about .subtitle {
+        color: var(--md-dark-secondary);
+        text-shadow: 0 0 15px rgba(207, 102, 121, 0.2),
+                     0 0 30px rgba(207, 102, 121, 0.1);
+        transition: text-shadow var(--transition-speed);
+    }
+
+    #about:hover .subtitle {
+        text-shadow: 0 0 20px rgba(207, 102, 121, 0.3),
+                     0 0 40px rgba(207, 102, 121, 0.2);
+    }
+
     .bento-item {
         background-color: var(--md-dark-surface);
         border: 1px solid var(--md-dark-elevation-2);
