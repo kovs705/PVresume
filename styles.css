@@ -790,6 +790,36 @@ footer {
     line-height: 1.6;
 }
 
+/* Immigration timeline */
+.immigration-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.immigration-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.immigration-text h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.immigration-image {
+    width: 200px;
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.immigration-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
     .bento-grid {
@@ -838,6 +868,16 @@ footer {
         width: 100%;
         max-width: 300px;
         justify-content: center;
+    }
+
+    .immigration-entry {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .immigration-image {
+        width: 100%;
+        max-width: 300px;
     }
 
     .interests-grid {
