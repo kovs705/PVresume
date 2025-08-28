@@ -554,7 +554,8 @@ header {
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     display: block;
     border-radius: var(--border-radius);
     transition: transform var(--transition-speed);
@@ -799,9 +800,10 @@ footer {
 
 .immigration-entry {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .immigration-text h3 {
@@ -810,7 +812,8 @@ footer {
 }
 
 .immigration-image {
-    width: 200px;
+    width: 100px;
+    height: auto;
     border-radius: var(--border-radius);
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
 }
@@ -870,15 +873,6 @@ footer {
         justify-content: center;
     }
 
-    .immigration-entry {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .immigration-image {
-        width: 100%;
-        max-width: 300px;
-    }
 
     .interests-grid {
         grid-template-columns: 1fr;
