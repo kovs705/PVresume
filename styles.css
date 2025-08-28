@@ -550,6 +550,12 @@ header {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
 }
 
 .gallery-item img {
@@ -580,6 +586,89 @@ header {
 
 .gallery-item:hover .caption {
     opacity: 1;
+}
+
+/* Gallery Modal */
+.gallery-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-speed);
+    z-index: 1000;
+}
+
+.gallery-modal.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.gallery-modal .modal-content {
+    background: var(--background-color);
+    width: 100%;
+    max-width: 800px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    transform: translateY(100%);
+    transition: transform var(--transition-speed);
+    padding: 1.5rem;
+}
+
+.gallery-modal.open .modal-content {
+    transform: translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.modal-body p {
+    flex: 1;
+    margin: 0;
+}
+
+.modal-body img {
+    width: 50%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+@media (max-width: 600px) {
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-body img {
+        width: 100%;
+    }
 }
 
 /* Contact Section */

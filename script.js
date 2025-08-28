@@ -70,3 +70,30 @@ const createMobileMenu = () => {
 
 // Initialize mobile menu
 createMobileMenu();
+
+// Gallery modal functionality
+const galleryModal = document.getElementById('gallery-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalDescription = document.getElementById('modal-description');
+const modalImage = document.getElementById('modal-image');
+const closeButton = galleryModal.querySelector('.modal-close');
+
+document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+        modalTitle.textContent = item.dataset.title;
+        modalDescription.textContent = item.dataset.description;
+        const img = item.querySelector('img');
+        modalImage.src = img.src;
+        modalImage.alt = item.dataset.title;
+        galleryModal.classList.add('open');
+    });
+});
+
+const hideModal = () => galleryModal.classList.remove('open');
+
+closeButton.addEventListener('click', hideModal);
+galleryModal.addEventListener('click', (e) => {
+    if (e.target === galleryModal) {
+        hideModal();
+    }
+});

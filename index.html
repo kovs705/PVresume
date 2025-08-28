@@ -144,34 +144,34 @@
             <section id="gallery" class="bento-item full-width">
                 <h2>Gallery</h2>
                 <div class="gallery-grid">
-                    <figure class="gallery-item">
+                    <button class="gallery-item" type="button" data-title="Nintendo Switch" data-description="Portable gaming console with a unique hybrid design.">
                         <img src="Resources/Gallery/nintendo-switch.png" alt="Nintendo Switch">
-                        <figcaption class="caption">Nintendo Switch</figcaption>
-                    </figure>
-                    <figure class="gallery-item">
+                        <span class="caption">Nintendo Switch</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-title="Coding mobile applications" data-description="Working on Swift and Kotlin projects.">
                         <img src="Resources/Gallery/coding.png" alt="Coding Mobile Applications">
-                        <figcaption class="caption">Coding mobile applications</figcaption>
-                    </figure>
-                    <figure class="gallery-item">
+                        <span class="caption">Coding mobile applications</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-title="CV paper" data-description="Printed resume and portfolio materials.">
                         <img src="Resources/Gallery/cv-paper.png" alt="CV Paper">
-                        <figcaption class="caption">CV paper</figcaption>
-                    </figure>
-                    <figure class="gallery-item">
+                        <span class="caption">CV paper</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-title="Argentina Flag" data-description="Exploring relocation options starting in Argentina.">
                         <img src="Resources/Gallery/argentina-flag.png" alt="Argentina Flag">
-                        <figcaption class="caption">Argentina Flag</figcaption>
-                    </figure>
-                    <figure class="gallery-item">
+                        <span class="caption">Argentina Flag</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-title="NAS storage" data-description="Personal network storage for safeguarding data.">
                         <img src="Resources/Gallery/nas-storage.png" alt="NAS Storage">
-                        <figcaption class="caption">NAS storage</figcaption>
-                    </figure>
-                    <figure class="gallery-item">
+                        <span class="caption">NAS storage</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-title="Japan" data-description="Future destination to continue tech career.">
                         <img src="Resources/Gallery/japan.png" alt="Japan">
-                        <figcaption class="caption">Japan</figcaption>
-                    </figure>
-                    <figure class="gallery-item">
+                        <span class="caption">Japan</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-title="Kyoto" data-description="Historic city blending tradition with technology.">
                         <img src="Resources/Gallery/kyoto.png" alt="Kyoto">
-                        <figcaption class="caption">Kyoto</figcaption>
-                    </figure>
+                        <span class="caption">Kyoto</span>
+                    </button>
                 </div>
             </section>
 
@@ -215,6 +215,18 @@
         <footer>
             <p>Handmade by Eugene Rozhkov</p>
         </footer>
+    </div>
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-description"></p>
+                <img id="modal-image" src="" alt="">
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
