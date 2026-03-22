@@ -13,6 +13,10 @@ const translations = {
       gallery: "Gallery",
       contact: "Contact",
     },
+    theme: {
+      toggleToDark: "Dark mode",
+      toggleToLight: "Light mode",
+    },
     hero: {
       eyebrow: "SwiftUI, UIKit, Kotlin Multiplatform",
       title: "I build iOS apps that stay usable under real-world pressure.",
@@ -504,6 +508,10 @@ const translations = {
       journey: "Recorrido",
       gallery: "Galería",
       contact: "Contacto",
+    },
+    theme: {
+      toggleToDark: "Modo oscuro",
+      toggleToLight: "Modo claro",
     },
     hero: {
       eyebrow: "SwiftUI, UIKit, Kotlin Multiplatform",
@@ -997,6 +1005,10 @@ const translations = {
       gallery: "Галерея",
       contact: "Контакты",
     },
+    theme: {
+      toggleToDark: "Темная тема",
+      toggleToLight: "Светлая тема",
+    },
     hero: {
       eyebrow: "SwiftUI, UIKit, Kotlin Multiplatform",
       title:
@@ -1481,6 +1493,8 @@ const localeMap = {
 
 const siteHeader = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
+const themeToggle = document.querySelector(".theme-toggle");
+const themeLabel = themeToggle.querySelector(".theme-label");
 const languageButtons = document.querySelectorAll(".lang-button");
 const modalShell = document.getElementById("detail-modal");
 const modalTitle = document.getElementById("modal-title");
@@ -1499,6 +1513,7 @@ const interestCloud = document.getElementById("interest-cloud");
 const galleryGrid = document.getElementById("gallery-grid");
 
 let activeLocale = getInitialLocale();
+let activeTheme = getInitialTheme();
 
 function getInitialLocale() {
   try {
@@ -1520,8 +1535,39 @@ function getInitialLocale() {
   return "en";
 }
 
+function getInitialTheme() {
+  const preset = document.documentElement.dataset.theme;
+  if (preset === "light" || preset === "dark") {
+    return preset;
+  }
+
+  try {
+    const saved = localStorage.getItem("pvresume-theme");
+    if (saved === "light" || saved === "dark") {
+      return saved;
+    }
+  } catch (error) {
+    // Ignore storage access failures and fall back to system preference.
+  }
+
+  const prefersDark =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return prefersDark ? "dark" : "light";
+}
+
 function getNestedValue(source, path) {
   return path.split(".").reduce((current, key) => current?.[key], source);
+}
+
+function updateThemeToggleText() {
+  const copy = translations[activeLocale]?.theme || translations.en.theme;
+  const label = activeTheme === "dark" ? copy.toggleToLight : copy.toggleToDark;
+
+  themeToggle.dataset.theme = activeTheme;
+  themeToggle.setAttribute("aria-pressed", String(activeTheme === "dark"));
+  themeToggle.setAttribute("aria-label", label);
+  themeLabel.textContent = label;
 }
 
 function translateStaticContent(locale) {
@@ -1716,6 +1762,23 @@ function closeModal() {
   document.body.classList.remove("modal-open");
 }
 
+function setTheme(theme) {
+  if (theme !== "light" && theme !== "dark") {
+    return;
+  }
+
+  activeTheme = theme;
+  document.documentElement.dataset.theme = theme;
+
+  try {
+    localStorage.setItem("pvresume-theme", theme);
+  } catch (error) {
+    // Ignore storage access failures in restricted environments.
+  }
+
+  updateThemeToggleText();
+}
+
 function setLanguage(locale) {
   if (!translations[locale]) {
     return;
@@ -1736,6 +1799,7 @@ function setLanguage(locale) {
   renderJourney(locale);
   renderInterests(locale);
   renderGallery(locale);
+  updateThemeToggleText();
 
   languageButtons.forEach((button) => {
     const isActive = button.dataset.lang === locale;
@@ -1758,6 +1822,11 @@ menuToggle.addEventListener("click", () => {
   const willOpen = !siteHeader.classList.contains("menu-open");
   siteHeader.classList.toggle("menu-open", willOpen);
   menuToggle.setAttribute("aria-expanded", String(willOpen));
+});
+
+themeToggle.addEventListener("click", () => {
+  setTheme(activeTheme === "dark" ? "light" : "dark");
+  closeMenu();
 });
 
 languageButtons.forEach((button) => {
@@ -1802,3 +1871,4 @@ document.addEventListener("keydown", (event) => {
 });
 
 setLanguage(activeLocale);
+setTheme(activeTheme);

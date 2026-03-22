@@ -15,6 +15,25 @@
       href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&amp;f[]=satoshi@400,500,700,900&amp;display=swap"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("pvresume-theme");
+          const prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const preferred = saved || (prefersDark ? "dark" : "light");
+          document.documentElement.dataset.theme = preferred;
+        } catch (error) {
+          if (
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            document.documentElement.dataset.theme = "dark";
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -50,31 +69,40 @@
             <a href="#contact" data-i18n="nav.contact">Contact</a>
           </nav>
 
-          <div class="language-switch" aria-label="Language selector">
-            <button
-              class="lang-button is-active"
-              type="button"
-              data-lang="en"
-              aria-pressed="true"
-            >
-              EN
+          <div class="header-tools">
+            <button class="theme-toggle" type="button" aria-pressed="false">
+              <span class="theme-toggle-visual" aria-hidden="true">
+                <span class="theme-toggle-thumb"></span>
+              </span>
+              <span class="theme-label">Dark mode</span>
             </button>
-            <button
-              class="lang-button"
-              type="button"
-              data-lang="es"
-              aria-pressed="false"
-            >
-              ES
-            </button>
-            <button
-              class="lang-button"
-              type="button"
-              data-lang="ru"
-              aria-pressed="false"
-            >
-              RU
-            </button>
+
+            <div class="language-switch" aria-label="Language selector">
+              <button
+                class="lang-button is-active"
+                type="button"
+                data-lang="en"
+                aria-pressed="true"
+              >
+                EN
+              </button>
+              <button
+                class="lang-button"
+                type="button"
+                data-lang="es"
+                aria-pressed="false"
+              >
+                ES
+              </button>
+              <button
+                class="lang-button"
+                type="button"
+                data-lang="ru"
+                aria-pressed="false"
+              >
+                RU
+              </button>
+            </div>
           </div>
         </div>
       </div>
