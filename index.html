@@ -1,233 +1,357 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eugene Rozhkov - iOS Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/visby-round-cf">
-    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&f[]=switzer@400,500,600,700&display=swap">
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <div class="profile">
-                <img src="Resources/hello.png" alt="Eugene" class="profile-image">
-                <div class="logo">Eugene Rozhkov</div>
-            </div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#immigration">Immigration</a>
-                <a href="#skills">Skills</a>
-                <a href="#languages">Languages</a>
-                <a href="#interests">Interests</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio and resume of Eugene Rozhkov, iOS developer focused on SwiftUI, UIKit, and product delivery."
+    />
+    <title>Eugene Rozhkov | iOS Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&amp;f[]=satoshi@400,500,700,900&amp;display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Homepage">
+          <img
+            src="Resources/hello.png"
+            alt="Portrait of Eugene Rozhkov"
+            class="brand-image"
+          />
+          <div class="brand-copy">
+            <span class="brand-name">Eugene Rozhkov</span>
+            <span class="brand-role" data-i18n="brand.role">iOS Developer</span>
+          </div>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="header-panel"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header-panel" id="header-panel">
+          <nav class="site-nav" aria-label="Primary">
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#journey" data-i18n="nav.journey">Journey</a>
+            <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </nav>
+
+          <div class="language-switch" aria-label="Language selector">
+            <button
+              class="lang-button is-active"
+              type="button"
+              data-lang="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button
+              class="lang-button"
+              type="button"
+              data-lang="es"
+              aria-pressed="false"
+            >
+              ES
+            </button>
+            <button
+              class="lang-button"
+              type="button"
+              data-lang="ru"
+              aria-pressed="false"
+            >
+              RU
+            </button>
+          </div>
         </div>
+      </div>
     </header>
 
-    <div class="container">
-        <section id="about" class="bento-item full-width">
-            <h1>Hello, I'm <span class="highlight">Eugene</span></h1>
-            <p class="subtitle">I'm a Swift developer working to build better products and bring ideas to life.</p>
-        </section>
+    <main class="page" id="top">
+      <section class="hero panel">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="hero.eyebrow"
+            >SwiftUI, UIKit, Kotlin Multiplatform</span
+          >
+          <h1 data-i18n="hero.title">
+            I build iOS apps that stay usable under real-world pressure.
+          </h1>
+          <p class="hero-summary" data-i18n="hero.summary">
+            Healthcare, logistics, and product work. I care about shipping clean
+            interfaces, stable code, and mobile experiences people can actually
+            trust.
+          </p>
 
-        <section id="experience" class="timeline-section">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year">Present</div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>iOS Developer</h3>
-                        <p class="company">Lifetime Health Plus Care Pvt Ltd</p>
-                        <p class="date">February 2024—Present</p>
-                        <p class="description">Developed and released iOS app for medical startup organization in India.</p>
-                    </div>
-                </div>
+          <div class="hero-actions">
+            <a
+              href="#experience"
+              class="primary-button"
+              data-i18n="hero.primaryCta"
+              >Explore experience</a
+            >
+            <button
+              class="secondary-button"
+              type="button"
+              data-modal="profile"
+              data-i18n="hero.secondaryCta"
+            >
+              Open profile brief
+            </button>
+          </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-year">2023</div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>iOS Developer</h3>
-                        <p class="company">Reshenie LLC</p>
-                        <p class="date">Summer 2023—Spring 2024</p>
-                        <p class="description">Developed several KMP projects for medical organizations in Russia. First - app for Optometrists on iPadOS. The second - Personal Cabinet for patients.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2022</div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Contract iOS Developer</h3>
-                        <p class="company">Individual Entrepreneur</p>
-                        <p class="date">Spring 2022—Fall 2022</p>
-                        <p class="description">Modernized an application for individual entrepreneurs in the logistics sector, designed for controlling the status of cargo transportation. Implemented SwiftUI components into a UIKit application. Helped a small business transfer part of the functionality from a computer to a phone.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="immigration" class="bento-item full-width immigration-section">
-            <h2>Immigration Timeline</h2>
-            <div class="immigration-entry">
-                <div class="immigration-text">
-                    <h3>May 2025 - Present — Argentina</h3>
-                    <p>Moved with my pregnant wife for our family future</p>
-                </div>
-                <img src="Resources/Gallery/argentina-flag.png" alt="Argentina Flag" class="immigration-image">
-            </div>
-            <div class="immigration-entry">
-                <div class="immigration-text">
-                    <h3>June 2024 - May 2025 — Japan </h3>
-                    <p>The first country we lived in long-term, full of studying and growth.</p>
-                </div>
-                <img src="Resources/Gallery/japan.png" alt="Japan" class="immigration-image">
-            </div>
-        </section>
-
-        <main class="bento-grid">
-            <section id="skills" class="bento-item">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Mobile Development</h3>
-                        <ul>
-                            <li>iOS Development</li>
-                            <li>SwiftUI</li>
-                            <li>UIKit</li>
-                            <li>Kotlin Multiplatform</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section id="languages" class="bento-item">
-                <h2>Natural Languages</h2>
-                <div class="languages-grid">
-                    <div class="language-item">
-                        <span class="language">Russian</span>
-                        <span class="level">Native</span>
-                    </div>
-                    <div class="language-item">
-                        <span class="language">English</span>
-                        <span class="level">Advanced</span>
-                    </div>
-                    <div class="language-item">
-                        <span class="language">Japanese</span>
-                        <span class="level">Intermediate</span>
-                    </div>
-                    <div class="language-item">
-                        <span class="language">Finnish</span>
-                        <span class="level">Beginner</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="interests" class="bento-item">
-                <h2>Personal Interests</h2>
-                <div class="interests-grid">
-                    <div class="interest-item">Learning Natural languages</div>
-                    <div class="interest-item">Playing musical instruments</div>
-                    <div class="interest-item">Reading science books</div>
-                    <div class="interest-item">Developing Personal app projects</div>
-                    <div class="interest-item">Typeracing</div>
-                    <div class="interest-item">Writing IT articles</div>
-                    <div class="interest-item">Reading horror manga</div>
-                </div>
-            </section>
-
-            <section id="gallery" class="bento-item full-width">
-                <h2>Gallery</h2>
-                <div class="gallery-grid">
-                    <button class="gallery-item" type="button" data-title="Nintendo Switch" data-description="Portable gaming console with a unique hybrid design.">
-                        <img src="Resources/Gallery/nintendo-switch.png" alt="Nintendo Switch">
-                        <span class="caption">Nintendo Switch</span>
-                    </button>
-                    <button class="gallery-item" type="button" data-title="Coding mobile applications" data-description="Working on Swift and Kotlin projects.">
-                        <img src="Resources/Gallery/coding.png" alt="Coding Mobile Applications">
-                        <span class="caption">Coding mobile applications</span>
-                    </button>
-                    <button class="gallery-item" type="button" data-title="CV paper" data-description="Printed resume and portfolio materials.">
-                        <img src="Resources/Gallery/cv-paper.png" alt="CV Paper">
-                        <span class="caption">CV paper</span>
-                    </button>
-                    <button class="gallery-item" type="button" data-title="Argentina Flag" data-description="Exploring relocation options starting in Argentina.">
-                        <img src="Resources/Gallery/argentina-flag.png" alt="Argentina Flag">
-                        <span class="caption">Argentina Flag</span>
-                    </button>
-                    <button class="gallery-item" type="button" data-title="NAS storage" data-description="Personal network storage for safeguarding data.">
-                        <img src="Resources/Gallery/nas-storage.png" alt="NAS Storage">
-                        <span class="caption">NAS storage</span>
-                    </button>
-                    <button class="gallery-item" type="button" data-title="Japan" data-description="Future destination to continue tech career.">
-                        <img src="Resources/Gallery/japan.png" alt="Japan">
-                        <span class="caption">Japan</span>
-                    </button>
-                    <button class="gallery-item" type="button" data-title="Kyoto" data-description="Historic city blending tradition with technology.">
-                        <img src="Resources/Gallery/kyoto.png" alt="Kyoto">
-                        <span class="caption">Kyoto</span>
-                    </button>
-                </div>
-            </section>
-
-            <section id="contact" class="bento-item full-width">
-                <h2>Contact</h2>
-                <div class="contact-links">
-                    <a href="mailto:EuKovs@gmail.com" class="contact-button gmail-button">
-                        <span class="icon-wrapper">
-                            <img src="Resources/Icons/gmailBlack.svg" alt="Email" class="icon-normal">
-                            <img src="Resources/Icons/gmailWhite.svg" alt="Email" class="icon-hover">
-                        </span>
-                        <span class="button-text">
-                            <span class="text-normal">Email</span>
-                            <span class="text-hover">Email</span>
-                        </span>
-                    </a>
-                    <a href="https://github.com/kovs705" target="_blank" class="contact-button github-button">
-                        <span class="icon-wrapper">
-                            <img src="Resources/Icons/githubBlack.svg" alt="GitHub" class="icon-normal">
-                            <img src="Resources/Icons/githubWhite.svg" alt="GitHub" class="icon-hover">
-                        </span>
-                        <span class="button-text">
-                            <span class="text-normal">GitHub</span>
-                            <span class="text-hover">GitHub</span>
-                        </span>
-                    </a>
-                    <a href="https://t.me/Kovs705" target="_blank" class="contact-button telegram-button">
-                        <span class="icon-wrapper">
-                            <img src="Resources/Icons/telegramBlack.svg" alt="Telegram" class="icon-normal">
-                            <img src="Resources/Icons/telegramWhite.svg" alt="Telegram" class="icon-hover">
-                        </span>
-                        <span class="button-text">
-                            <span class="text-normal">Telegram</span>
-                            <span class="text-hover">Telegram</span>
-                        </span>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>Handmade by Eugene Rozhkov</p>
-        </footer>
-    </div>
-    <div id="gallery-modal" class="gallery-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modal-title"></h2>
-                <button class="modal-close" aria-label="Close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p id="modal-description"></p>
-                <img id="modal-image" src="" alt="">
-            </div>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <strong data-i18n="hero.stats.0.value">3+</strong>
+              <span data-i18n="hero.stats.0.label"
+                >years of professional mobile work</span
+              >
+            </article>
+            <article class="stat-card">
+              <strong data-i18n="hero.stats.1.value">3</strong>
+              <span data-i18n="hero.stats.1.label"
+                >countries lived in and adapted to</span
+              >
+            </article>
+            <article class="stat-card">
+              <strong data-i18n="hero.stats.2.value">4</strong>
+              <span data-i18n="hero.stats.2.label"
+                >human languages studied or used</span
+              >
+            </article>
+          </div>
         </div>
+
+        <div class="hero-side">
+          <div class="portrait-card">
+            <div class="portrait-frame">
+              <img
+                src="Resources/hello.png"
+                alt="Eugene Rozhkov"
+                class="hero-portrait"
+              />
+            </div>
+          </div>
+
+          <aside class="availability-card">
+            <span class="eyebrow" data-i18n="hero.availability.eyebrow"
+              >Current situation</span
+            >
+            <h2 data-i18n="hero.availability.title">
+              Based in Argentina, open to serious remote teams.
+            </h2>
+            <p data-i18n="hero.availability.copy">
+              I have already relocated across countries with my family. I adapt
+              quickly, communicate directly, and work well in distributed
+              environments.
+            </p>
+            <div class="mini-pills">
+              <span data-i18n="hero.availability.pills.0">Healthcare apps</span>
+              <span data-i18n="hero.availability.pills.1">KMP aware</span>
+              <span data-i18n="hero.availability.pills.2"
+                >Async collaboration</span
+              >
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="fact-grid" id="about"></section>
+
+      <section class="section-block" id="experience">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-i18n="experience.eyebrow">Work</span>
+            <h2 data-i18n="experience.title">
+              Experience that is closer to production than portfolio theater.
+            </h2>
+          </div>
+          <p data-i18n="experience.intro">
+            The important part is not the job title. It is whether the work
+            survived real users, real constraints, and real delivery pressure.
+          </p>
+        </div>
+
+        <div class="experience-grid" id="experience-grid"></div>
+      </section>
+
+      <section class="section-block dual-block" id="skills">
+        <div class="panel nested-panel">
+          <div class="section-head compact">
+            <div>
+              <span class="eyebrow" data-i18n="skills.eyebrow">Stack</span>
+              <h2 data-i18n="skills.title">Technical focus</h2>
+            </div>
+            <p data-i18n="skills.intro">
+              The stack matters, but only if it leads to a better product and a
+              codebase people can keep shipping.
+            </p>
+          </div>
+          <div class="skill-groups" id="skill-groups"></div>
+        </div>
+
+        <div class="panel nested-panel side-column">
+          <div class="section-head compact">
+            <div>
+              <span class="eyebrow" data-i18n="strengths.eyebrow"
+                >Approach</span
+              >
+              <h2 data-i18n="strengths.title">How I work</h2>
+            </div>
+            <p data-i18n="strengths.intro">
+              This is the part that usually matters after the stack filter is
+              gone.
+            </p>
+          </div>
+
+          <div class="strength-list" id="strength-list"></div>
+
+          <div class="divider"></div>
+
+          <div class="section-head compact inner-head">
+            <div>
+              <span class="eyebrow" data-i18n="languages.eyebrow"
+                >Languages</span
+              >
+              <h2 data-i18n="languages.title">Human languages</h2>
+            </div>
+          </div>
+
+          <div class="spoken-languages" id="spoken-languages"></div>
+        </div>
+      </section>
+
+      <section class="section-block dual-block" id="journey">
+        <div class="panel nested-panel">
+          <div class="section-head compact">
+            <div>
+              <span class="eyebrow" data-i18n="journey.eyebrow"
+                >Relocation</span
+              >
+              <h2 data-i18n="journey.title">Career context and life moves</h2>
+            </div>
+            <p data-i18n="journey.intro">
+              The resume is cleaner when the actual life timeline is visible
+              too.
+            </p>
+          </div>
+
+          <div class="journey-track" id="journey-track"></div>
+        </div>
+
+        <div class="panel nested-panel">
+          <div class="section-head compact">
+            <div>
+              <span class="eyebrow" data-i18n="interests.eyebrow"
+                >Interests</span
+              >
+              <h2 data-i18n="interests.title">Outside work</h2>
+            </div>
+            <p data-i18n="interests.intro">
+              Useful because interests reveal how someone learns, not because
+              hobbies need to look decorative.
+            </p>
+          </div>
+
+          <div class="interest-cloud" id="interest-cloud"></div>
+        </div>
+      </section>
+
+      <section class="section-block" id="gallery">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-i18n="gallery.eyebrow">Snapshots</span>
+            <h2 data-i18n="gallery.title">Additional context</h2>
+          </div>
+          <p data-i18n="gallery.intro">
+            Not every useful signal fits into a bullet list. These cards add
+            some texture without cluttering the main flow.
+          </p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+
+      <section class="panel contact-panel" id="contact">
+        <div class="contact-copy">
+          <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+          <h2 data-i18n="contact.title">If the team is serious, contact me.</h2>
+          <p data-i18n="contact.copy">
+            Email is best for role discussions. GitHub shows code. Telegram is
+            fastest for direct conversation.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a
+            href="mailto:EuKovs@gmail.com"
+            class="primary-button"
+            data-i18n="contact.actions.email"
+            >Send email</a
+          >
+          <a
+            href="https://github.com/kovs705"
+            target="_blank"
+            rel="noreferrer"
+            class="secondary-button"
+            data-i18n="contact.actions.github"
+            >View GitHub</a
+          >
+          <a
+            href="https://t.me/Kovs705"
+            target="_blank"
+            rel="noreferrer"
+            class="secondary-button"
+            data-i18n="contact.actions.telegram"
+            >Open Telegram</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copy">Built by Eugene Rozhkov</p>
+    </footer>
+
+    <div class="modal-shell" id="detail-modal" hidden aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div
+        class="modal-sheet"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button
+          class="modal-close"
+          type="button"
+          data-close-modal
+          aria-label="Close"
+        >
+          ×
+        </button>
+        <span class="modal-kicker" id="modal-kicker"></span>
+        <h2 id="modal-title"></h2>
+        <p class="modal-summary" id="modal-summary"></p>
+        <div class="modal-meta" id="modal-meta"></div>
+        <div class="modal-image-wrap">
+          <img id="modal-image" hidden alt="" />
+        </div>
+        <div class="modal-sections" id="modal-sections"></div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
