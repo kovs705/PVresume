@@ -1653,12 +1653,15 @@ h3 {
     padding: 1.2rem;
   }
 
-  .modal-topbar {
-    grid-template-columns: 1fr;
+  .modal-intro {
+    padding-right: 4.2rem;
   }
 
   .modal-close {
     top: 0;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 
   .modal-stage {
