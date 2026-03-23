@@ -1,10 +1,10 @@
 const translations = {
   en: {
     meta: {
-      title: "Eugene Rozhkov | iOS Developer",
+      title: "Eugene Rozhkov | Apple Platform Developer",
     },
     brand: {
-      role: "iOS Developer",
+      role: "Apple Platform Developer",
     },
     nav: {
       experience: "Experience",
@@ -18,29 +18,29 @@ const translations = {
       toggleToLight: "Light mode",
     },
     hero: {
-      eyebrow: "SwiftUI, UIKit, Kotlin Multiplatform",
-      title: "I build iOS apps that stay usable under real-world pressure.",
+      eyebrow: "SwiftUI, UIKit, Apple Platforms, Kotlin Multiplatform",
+      title: "I build for Apple platforms and think beyond ticket execution.",
       summary:
-        "Healthcare, logistics, and product work. I care about shipping clean interfaces, stable code, and mobile experiences people can actually trust.",
-      primaryCta: "Explore experience",
-      secondaryCta: "Open profile brief",
+        "iOS is my base, not my limit. I work across product, interface, and delivery problems, and I prefer building useful software over waiting for instructions.",
+      primaryCta: "See my work",
+      secondaryCta: "Profile brief",
       stats: [
-        { value: "4+", label: "years of professional mobile work" },
-        { value: "3", label: "countries lived in and adapted to" },
-        { value: "4", label: "human languages studied or used" },
+        { value: "4+", label: "years in professional mobile development" },
+        { value: "3", label: "countries I have lived and adapted in" },
+        { value: "4", label: "spoken languages studied or used" },
       ],
       availability: {
         eyebrow: "Current situation",
-        title: "Based in Argentina, open to serious remote teams.",
-        copy: "I have already relocated across countries with my family. I adapt quickly, communicate directly, and work well in distributed environments.",
-        pills: ["Healthcare apps", "KMP aware", "Async collaboration"],
+        title: "Based in Argentina, open to strong product teams.",
+        copy: "I have already relocated across countries with my family, so I am comfortable with change, async collaboration, and long-term commitments.",
+        pills: ["Apple platforms", "Healthcare", "Product mindset"],
       },
     },
     experience: {
       eyebrow: "Work",
-      title: "Experience that is closer to production than portfolio theater.",
+      title: "I work best where product thinking matters as much as code.",
       intro:
-        "The important part is not the job title. It is whether the work survived real users, real constraints, and real delivery pressure.",
+        "These roles are different, but the pattern is the same: ship useful software, improve the product, and do more than just implement the obvious request.",
       viewDetails: "View details",
       items: [
         {
@@ -50,7 +50,7 @@ const translations = {
           period: "Feb 2024 - Present",
           summary:
             "Built and released an iOS app for a medical startup in India.",
-          tags: ["iOS", "Medical", "Remote"],
+          tags: ["iOS", "Healthcare", "Remote"],
         },
         {
           modal: "reshenie",
@@ -58,8 +58,8 @@ const translations = {
           company: "Reshenie LLC",
           period: "Summer 2023 - Spring 2024",
           summary:
-            "Worked on medical KMP products: an iPad tool for optometrists and a patient cabinet app.",
-          tags: ["KMP", "iPadOS", "Healthcare"],
+            "Worked on medical KMP products, including an iPad app for optometrists and a patient cabinet app.",
+          tags: ["KMP", "iPadOS", "Medical"],
         },
         {
           modal: "contract",
@@ -67,40 +67,40 @@ const translations = {
           company: "Individual Entrepreneur",
           period: "Spring 2022 - Fall 2022",
           summary:
-            "Modernized a logistics app, introduced SwiftUI into UIKit, and moved desktop tasks to mobile.",
+            "Modernized a logistics app, brought SwiftUI into UIKit, and moved useful desktop flows to mobile.",
           tags: ["UIKit", "SwiftUI", "Logistics"],
         },
       ],
     },
     skills: {
       eyebrow: "Stack",
-      title: "Technical focus",
+      title: "What I actually bring",
       intro:
-        "The stack matters, but only if it leads to a better product and a codebase people can keep shipping.",
+        "The stack matters, but only if it helps build a better product and keeps the codebase moving forward.",
       groups: [
         {
-          title: "iOS core",
-          text: "Main mobile platform and UI work.",
+          title: "Apple platform work",
+          text: "iOS is the center. I also think in terms of the wider Apple product surface.",
           items: ["Swift", "SwiftUI", "UIKit", "iPadOS"],
         },
         {
-          title: "Product delivery",
-          text: "The part where features become usable software.",
+          title: "Product and delivery",
+          text: "I care about how a feature fits the product, not only how it compiles.",
           items: [
             "Feature implementation",
             "API integration",
-            "UI refinement",
+            "Interface refinement",
             "Release work",
           ],
         },
         {
-          title: "Cross-platform awareness",
-          text: "Useful when mobile work meets a shared stack.",
+          title: "Range across domains",
+          text: "I have worked across healthcare, logistics, and shared-stack environments.",
           items: [
+            "Healthcare products",
             "Kotlin Multiplatform",
-            "Distributed teams",
-            "Git workflows",
             "Existing codebases",
+            "Remote collaboration",
           ],
         },
       ],
@@ -109,17 +109,17 @@ const translations = {
       eyebrow: "Approach",
       title: "How I work",
       intro:
-        "This is the part that usually matters after the stack filter is gone.",
+        "This is the part that matters once the basic stack filter is over.",
       items: [
-        "I bias toward clear product decisions, stable flows, and interfaces that do not fight the user.",
-        "I can join an existing codebase and improve it without treating a full rewrite as the default answer.",
-        "I work well with remote teams, async communication, and practical constraints instead of idealized ones.",
-        "Relocation and adaptation are already part of my life, so change does not derail me.",
+        "I try to understand the product problem first, not just the ticket.",
+        "I am comfortable improving an existing codebase without turning every problem into a rewrite.",
+        "I move between interface work, implementation, and delivery details when the product needs it.",
+        "I adapt quickly to new countries, teams, and working environments.",
       ],
     },
     languages: {
       eyebrow: "Languages",
-      title: "Human languages",
+      title: "Spoken languages",
       items: [
         { name: "Russian", level: "Native" },
         { name: "English", level: "Advanced" },
@@ -129,24 +129,23 @@ const translations = {
     },
     journey: {
       eyebrow: "Relocation",
-      title: "Career context and life moves",
-      intro:
-        "The resume is cleaner when the actual life timeline is visible too.",
+      title: "Career context and relocation",
+      intro: "The work makes more sense when the life timeline is visible too.",
       items: [
         {
           period: "May 2025 - Present",
           place: "Argentina",
-          text: "Moved with my wife to build long-term family stability and continue growing internationally.",
+          text: "I moved with my wife to build long-term stability and keep growing internationally.",
         },
         {
           period: "Jun 2024 - May 2025",
           place: "Japan",
-          text: "First long-term international move. Strong learning period, new routines, new environment.",
+          text: "My first long-term international move. Strong period of adaptation, learning, and new routines.",
         },
         {
           period: "Before 2024",
           place: "Russia",
-          text: "Built the foundation: contract work, team work, and the transition from learning to shipping.",
+          text: "This is where the base was built: contract work, team work, and the shift from learning into shipping.",
         },
       ],
     },
@@ -154,7 +153,7 @@ const translations = {
       eyebrow: "Interests",
       title: "Outside work",
       intro:
-        "Useful because interests reveal how someone learns, not because hobbies need to look decorative.",
+        "I keep this section because it says something about how I learn and what holds my attention.",
       items: [
         "Language learning",
         "Musical instruments",
@@ -166,25 +165,25 @@ const translations = {
       ],
     },
     gallery: {
-      eyebrow: "Snapshots",
-      title: "Additional context",
+      eyebrow: "Context",
+      title: "A few signals outside resume bullets",
       intro:
-        "Not every useful signal fits into a bullet list. These cards add some texture without cluttering the main flow.",
+        "These cards are here to add context, not decoration. They explain what I pay attention to and how I think.",
       items: [
         {
           modal: "gallery-coding",
           image: "Resources/Gallery/coding.png",
-          title: "Coding mobile applications",
+          title: "Building apps",
           label: "Work",
-          text: "The obvious one: mobile development is not just a job line, it is still where I spend focused time.",
+          text: "This is still where most of my focused time goes: building Apple-platform software and improving product details.",
           size: "wide",
         },
         {
           modal: "gallery-switch",
           image: "Resources/Gallery/nintendo-switch.png",
           title: "Nintendo Switch",
-          label: "Games",
-          text: "A reminder that good product design should feel understandable before it feels technical.",
+          label: "Product",
+          text: "I pay attention to products that handle complexity without making the user feel it.",
           size: "normal",
         },
         {
@@ -192,7 +191,7 @@ const translations = {
           image: "Resources/Gallery/cv-paper.png",
           title: "Printed CV",
           label: "Career",
-          text: "I still like seeing work translated into something tangible and direct.",
+          text: "Clear presentation matters. If I cannot explain my work directly, it is not framed well enough.",
           size: "normal",
         },
         {
@@ -200,7 +199,7 @@ const translations = {
           image: "Resources/Gallery/argentina-flag.png",
           title: "Argentina",
           label: "Base",
-          text: "Current base and the practical center of the next stage.",
+          text: "This is my current base and the place from which I am building the next stage of my career.",
           size: "normal",
         },
         {
@@ -208,7 +207,7 @@ const translations = {
           image: "Resources/Gallery/nas-storage.png",
           title: "NAS storage",
           label: "Systems",
-          text: "I like tools that reduce chaos and keep data under control.",
+          text: "I like systems that stay organized, predictable, and under control.",
           size: "normal",
         },
         {
@@ -216,23 +215,24 @@ const translations = {
           image: "Resources/Gallery/japan.png",
           title: "Japan",
           label: "Relocation",
-          text: "A major growth phase, not just a destination.",
+          text: "This was a serious period of adaptation and growth, not just a location change.",
           size: "wide",
         },
         {
           modal: "gallery-kyoto",
           image: "Resources/Gallery/kyoto.png",
           title: "Kyoto",
-          label: "Perspective",
-          text: "The mix of discipline, history, and precision is hard not to respect.",
+          label: "Taste",
+          text: "Places like this sharpen my taste for precision, structure, and restraint.",
           size: "tall",
         },
       ],
     },
     contact: {
       eyebrow: "Contact",
-      title: "If the team is serious, contact me.",
-      copy: "Email is best for role discussions. GitHub shows code. Telegram is fastest for direct conversation.",
+      title:
+        "If your team needs an Apple-platform developer who thinks like a product engineer, contact me.",
+      copy: "Email is best for hiring conversations. GitHub shows public code. Telegram is fastest for direct contact.",
       actions: {
         email: "Send email",
         github: "View GitHub",
@@ -245,23 +245,23 @@ const translations = {
     facts: [
       {
         index: "01",
-        title: "Practical product shipping",
-        text: "Not design theater. I work on production apps, migrations, and features that have to survive release.",
-        button: "Why it matters",
+        title: "Apple platforms, not only iOS",
+        text: "iOS is my main platform, but I think wider: product quality, interfaces, and how the work fits the Apple ecosystem.",
+        button: "More",
         modal: "profile",
       },
       {
         index: "02",
-        title: "Health and service domains",
-        text: "Most of my work sits in medical and operational products where clarity matters more than decoration.",
-        button: "Open details",
+        title: "More than ticket execution",
+        text: "I try to understand why a feature matters and how it should work, not just implement what was written.",
+        button: "Details",
         modal: "healthcare",
       },
       {
         index: "03",
-        title: "Relocation story",
-        text: "Japan and Argentina were not tourism. They were long-term moves, learning cycles, and proof of adaptability.",
-        button: "Read more",
+        title: "International move, steady work",
+        text: "Japan and Argentina matter because they show adaptation, long-term thinking, and the ability to keep moving.",
+        button: "Read",
         modal: "relocation",
       },
     ],
@@ -270,66 +270,66 @@ const translations = {
     },
     modals: {
       profile: {
-        kicker: "Profile brief",
-        title: "What this page is really saying",
+        kicker: "Profile",
+        title: "How I position myself",
         summary:
-          "I am an iOS developer with practical product experience, a bias for shipping, and a work style that fits distributed teams better than empty presentation does.",
-        meta: ["SwiftUI", "UIKit", "Remote work", "Argentina"],
+          "I am an Apple-platform developer with iOS at the center, but I do not want to be limited to pure ticket execution. I care about product decisions, interface quality, and shipping useful work.",
+        meta: ["Apple platforms", "SwiftUI", "UIKit", "Argentina"],
         image: "Resources/hello.png",
         sections: [
           {
             title: "Core value",
-            body: "The main selling point is not being flashy. It is being useful: understandable UI, stable delivery, and a calm approach to real constraints.",
+            body: "My main value is not just writing iOS code. It is being useful across product, interface, and delivery decisions while keeping the implementation clean.",
           },
           {
-            title: "Current fit",
+            title: "Best fit",
             items: [
-              "Remote or distributed product teams",
-              "iOS-heavy roles with real ownership",
-              "Products where reliability matters more than showmanship",
+              "Product teams building real Apple-platform software",
+              "Roles with room for ownership, not only execution",
+              "Teams that value clear thinking and direct communication",
             ],
           },
         ],
       },
       healthcare: {
-        kicker: "Domain fit",
-        title: "Why healthcare and service work matters",
+        kicker: "Domain",
+        title: "Why healthcare shaped my approach",
         summary:
-          "These products punish sloppy thinking. That is useful. It forces clearer decisions, clearer UI, and better communication with non-engineering stakeholders.",
+          "Healthcare and service products forced me to care about clarity, trust, and calm decision-making. That changed how I think about interfaces and product quality.",
         meta: ["Healthcare", "Operational UX", "Trust"],
         sections: [
           {
-            title: "What the domain changes",
+            title: "What it changed",
             items: [
-              "Flows need to be clear under pressure",
+              "Flows need to stay clear under pressure",
               "Ambiguity wastes time and trust",
-              "Shipping matters, but mistakes matter too",
+              "Product decisions matter as much as implementation",
             ],
           },
           {
-            title: "What I bring",
-            body: "I am comfortable in products where clean behavior is more important than showing off technical cleverness.",
+            title: "What I take from it",
+            body: "I am comfortable in products where the goal is not showing off, but making the software dependable and easy to use.",
           },
         ],
       },
       relocation: {
-        kicker: "Life context",
-        title: "Relocation is already real, not hypothetical",
+        kicker: "Relocation",
+        title: "Why the international timeline matters",
         summary:
-          "I have already moved across countries with my family. That matters because adaptation, communication, and long-term planning are already tested in real life.",
+          "I have already moved across countries with my family. That matters because adaptation, long-term planning, and working through change are already part of real life for me.",
         meta: ["Argentina", "Japan", "Family move"],
         sections: [
           {
-            title: "Why it matters professionally",
+            title: "Professional impact",
             items: [
               "Fast adaptation to new environments",
-              "Comfort with asynchronous communication",
-              "Lower friction when teams are international",
+              "Comfort with async communication",
+              "Steady work through major life changes",
             ],
           },
           {
             title: "Personal context",
-            body: "The move to Argentina was tied to family stability and the future. This is not a temporary experiment.",
+            body: "The move to Argentina is part of a long-term life decision, not a short experiment. I want the work path to be just as serious.",
           },
         ],
       },
@@ -337,41 +337,41 @@ const translations = {
         kicker: "Current role",
         title: "Lifetime Health Plus Care Pvt Ltd",
         summary:
-          "Developed and released an iOS app for a medical startup organization in India.",
-        meta: ["Feb 2024 - Present", "iOS", "Medical startup"],
+          "I built and released an iOS app for a medical startup in India.",
+        meta: ["Feb 2024 - Present", "iOS", "Healthcare"],
         sections: [
           {
-            title: "Work focus",
+            title: "What I handled",
             items: [
               "Production iOS development",
-              "Healthcare product delivery",
-              "Remote collaboration across teams",
+              "Medical product delivery",
+              "Remote team collaboration",
             ],
           },
           {
             title: "Why it matters",
-            body: "This is recent, practical work tied to an actual release, not a learning project.",
+            body: "This is recent product work tied to an actual release. It reflects how I work now, not only what I learned earlier.",
           },
         ],
       },
       reshenie: {
-        kicker: "Medical KMP work",
+        kicker: "KMP work",
         title: "Reshenie LLC",
         summary:
-          "Worked on several KMP products for medical organizations: an iPadOS app for optometrists and a personal cabinet for patients.",
+          "I worked on medical KMP products, including an iPad app for optometrists and a patient cabinet app.",
         meta: ["Summer 2023 - Spring 2024", "KMP", "iPadOS"],
         sections: [
           {
-            title: "Product range",
+            title: "Range of work",
             items: [
-              "Tooling for specialists",
-              "Patient-facing cabinet app",
-              "Shared-stack environment with Kotlin Multiplatform",
+              "Specialist-facing product work",
+              "Patient-facing app work",
+              "Shared-stack development with Kotlin Multiplatform",
             ],
           },
           {
-            title: "What it proved",
-            body: "I can work across different product surfaces without pretending one architecture style solves every problem.",
+            title: "Why it matters",
+            body: "This role showed that I can work across different product surfaces and different technical constraints without losing focus.",
           },
         ],
       },
@@ -379,117 +379,118 @@ const translations = {
         kicker: "Contract work",
         title: "Logistics app modernization",
         summary:
-          "Modernized a logistics application, introduced SwiftUI into a UIKit codebase, and helped shift part of the workflow from desktop to mobile.",
+          "I modernized a logistics app, brought SwiftUI into a UIKit codebase, and helped move useful desktop workflows to mobile.",
         meta: ["2022", "UIKit", "SwiftUI", "Logistics"],
         sections: [
           {
             title: "Main contribution",
             items: [
-              "Added SwiftUI components into an existing UIKit app",
-              "Supported modernization without a rewrite fantasy",
-              "Moved useful business actions onto the phone",
+              "Added SwiftUI inside an existing UIKit app",
+              "Improved the product without relying on a rewrite",
+              "Moved practical business actions onto the phone",
             ],
           },
           {
             title: "Why it matters",
-            body: "This is the kind of work many real products need: targeted improvement inside an imperfect existing system.",
+            body: "A lot of real work looks like this: improve what exists, keep it moving, and make the product more useful instead of chasing a perfect reset.",
           },
         ],
       },
       "gallery-coding": {
-        kicker: "Work habit",
-        title: "Coding mobile applications",
+        kicker: "Work",
+        title: "Building apps",
         summary:
-          "The image is obvious, but the point is still relevant: I spend serious time building, not just talking about building.",
-        meta: ["Swift", "KMP", "Mobile"],
+          "This belongs here because building Apple-platform software is still where I spend serious, focused time.",
+        meta: ["Swift", "KMP", "Apple platforms"],
         image: "Resources/Gallery/coding.png",
         sections: [
           {
-            title: "Why it is here",
-            body: "Some portfolios hide the actual work behind decoration. I would rather make the work visible.",
+            title: "Why it belongs",
+            body: "I did not want this page to sound abstract. The work itself should stay visible.",
           },
         ],
       },
       "gallery-switch": {
-        kicker: "Product taste",
+        kicker: "Product",
         title: "Nintendo Switch",
         summary:
-          "A simple reminder that product design wins when it feels understandable and useful before it feels clever.",
+          "I pay attention to products that make complexity feel lighter for the user.",
         meta: ["Games", "Product design"],
         image: "Resources/Gallery/nintendo-switch.png",
         sections: [
           {
             title: "Why it belongs",
-            body: "Good consumer products teach a lot about feedback loops, ergonomics, and how people forgive complexity only when the experience earns it.",
+            body: "Consumer products are useful study material. They show how clarity, feedback, and restraint make complicated systems feel easy.",
           },
         ],
       },
       "gallery-cv": {
-        kicker: "Career material",
+        kicker: "Career",
         title: "Printed CV",
         summary:
-          "I still like seeing work translated into something direct and concrete.",
-        meta: ["Resume", "Presentation"],
+          "I care about presenting work clearly, without hiding behind effects or vague language.",
+        meta: ["Resume", "Communication"],
         image: "Resources/Gallery/cv-paper.png",
         sections: [
           {
             title: "Why it belongs",
-            body: "A page should be clear enough that it survives both a screen and a printed sheet. If it only works with animation, it is weak.",
+            body: "If I cannot explain the work directly, the presentation is weak. The same rule applies to products.",
           },
         ],
       },
       "gallery-argentina": {
-        kicker: "Current base",
+        kicker: "Base",
         title: "Argentina",
-        summary: "Current home base and a serious chapter, not a random stop.",
-        meta: ["Argentina", "Family move"],
+        summary:
+          "This is my current base and the place from which I am building the next stage of my work.",
+        meta: ["Argentina", "Current base"],
         image: "Resources/Gallery/argentina-flag.png",
         sections: [
           {
             title: "Why it belongs",
-            body: "Location affects work rhythm, future planning, and what kind of opportunities make sense next.",
+            body: "Location matters because it shapes daily work rhythm, future planning, and what long-term opportunities make sense.",
           },
         ],
       },
       "gallery-nas": {
-        kicker: "Systems thinking",
+        kicker: "Systems",
         title: "NAS storage",
         summary:
-          "I like tools that reduce chaos and keep important things organized.",
+          "I like systems that stay organized, predictable, and under control.",
         meta: ["Systems", "Reliability"],
         image: "Resources/Gallery/nas-storage.png",
         sections: [
           {
             title: "Why it belongs",
-            body: "That preference shows up in software too: predictable systems beat clever messes.",
+            body: "That preference shows up in software too. I trust predictable structure more than clever chaos.",
           },
         ],
       },
       "gallery-japan": {
-        kicker: "Growth phase",
+        kicker: "Relocation",
         title: "Japan",
         summary:
-          "A major growth period tied to learning, adaptation, and rebuilding routines in a new environment.",
-        meta: ["Japan", "Relocation"],
+          "This was a serious period of adaptation, learning, and rebuilding routines in a new environment.",
+        meta: ["Japan", "Growth"],
         image: "Resources/Gallery/japan.png",
         sections: [
           {
             title: "Why it belongs",
-            body: "Long-term moves change how you think about work, planning, and what resilience actually means.",
+            body: "Long moves change how you think about work, stability, and what it means to keep progressing under change.",
           },
         ],
       },
       "gallery-kyoto": {
-        kicker: "Perspective",
+        kicker: "Taste",
         title: "Kyoto",
         summary:
-          "The mix of discipline, precision, and history leaves an impression for obvious reasons.",
+          "Places like this sharpen my taste for precision, structure, and restraint.",
         meta: ["Kyoto", "Observation"],
         image: "Resources/Gallery/kyoto.png",
         sections: [
           {
             title: "Why it belongs",
-            body: "Taste matters. Places shape the kind of products and interfaces you start respecting.",
+            body: "Taste is part of product work. The environments I respect affect the kind of interfaces and products I want to build.",
           },
         ],
       },
@@ -497,14 +498,14 @@ const translations = {
   },
   es: {
     meta: {
-      title: "Eugene Rozhkov | Desarrollador iOS",
+      title: "Eugene Rozhkov | Desarrollador para Apple Platforms",
     },
     brand: {
-      role: "Desarrollador iOS",
+      role: "Desarrollador Apple Platforms",
     },
     nav: {
       experience: "Experiencia",
-      skills: "Habilidades",
+      skills: "Skills",
       journey: "Recorrido",
       gallery: "Galería",
       contact: "Contacto",
@@ -514,36 +515,38 @@ const translations = {
       toggleToLight: "Modo claro",
     },
     hero: {
-      eyebrow: "SwiftUI, UIKit, Kotlin Multiplatform",
-      title: "Construyo apps iOS que siguen siendo útiles bajo presión real.",
+      eyebrow: "SwiftUI, UIKit, Apple Platforms, Kotlin Multiplatform",
+      title:
+        "Desarrollo para Apple platforms y pienso más allá de ejecutar tickets.",
       summary:
-        "Salud, logística y trabajo de producto. Me importa lanzar interfaces limpias, código estable y experiencias móviles en las que la gente realmente pueda confiar.",
-      primaryCta: "Ver experiencia",
-      secondaryCta: "Abrir resumen",
+        "iOS es mi base, pero no mi límite. Me muevo entre producto, interfaz y entrega, y prefiero construir software útil antes que esperar instrucciones cerradas.",
+      primaryCta: "Ver trabajo",
+      secondaryCta: "Perfil",
       stats: [
-        { value: "3+", label: "años de trabajo profesional en mobile" },
-        { value: "3", label: "países donde ya viví y me adapté" },
-        { value: "4", label: "idiomas humanos estudiados o usados" },
+        { value: "4+", label: "años en desarrollo mobile profesional" },
+        { value: "3", label: "países donde viví y me adapté" },
+        { value: "4", label: "idiomas que estudié o uso" },
       ],
       availability: {
         eyebrow: "Situación actual",
-        title: "Basado en Argentina, abierto a equipos remotos serios.",
-        copy: "Ya me relocalicé entre países con mi familia. Me adapto rápido, me comunico de forma directa y trabajo bien en entornos distribuidos.",
-        pills: ["Apps de salud", "Conozco KMP", "Colaboración async"],
+        title: "Basado en Argentina, abierto a equipos de producto fuertes.",
+        copy: "Ya me mudé entre países con mi familia, así que estoy cómodo con el cambio, la colaboración async y los planes de largo plazo.",
+        pills: ["Apple platforms", "Salud", "Mentalidad de producto"],
       },
     },
     experience: {
       eyebrow: "Trabajo",
-      title: "Experiencia más cerca de producción que del teatro de portfolio.",
+      title:
+        "Rindo mejor donde el criterio de producto importa tanto como el código.",
       intro:
-        "Lo importante no es el cargo. Lo importante es si el trabajo sobrevivió usuarios reales, restricciones reales y presión real de entrega.",
-      viewDetails: "Ver detalles",
+        "Los roles son distintos, pero el patrón se repite: entregar software útil, mejorar el producto y hacer más que solo implementar lo obvio.",
+      viewDetails: "Detalles",
       items: [
         {
           modal: "lhpc",
           role: "Desarrollador iOS",
           company: "Lifetime Health Plus Care Pvt Ltd",
-          period: "Feb 2024 - Actualidad",
+          period: "Feb 2024 - Hoy",
           summary:
             "Desarrollé y lancé una app iOS para una startup médica en India.",
           tags: ["iOS", "Salud", "Remoto"],
@@ -554,8 +557,8 @@ const translations = {
           company: "Reshenie LLC",
           period: "Verano 2023 - Primavera 2024",
           summary:
-            "Trabajé en productos médicos con KMP: una herramienta para optometristas en iPad y una app para pacientes.",
-          tags: ["KMP", "iPadOS", "Salud"],
+            "Trabajé en productos médicos con KMP, incluyendo una app de iPad para optometristas y una app para pacientes.",
+          tags: ["KMP", "iPadOS", "Medical"],
         },
         {
           modal: "contract",
@@ -563,40 +566,40 @@ const translations = {
           company: "Emprendedor individual",
           period: "Primavera 2022 - Otoño 2022",
           summary:
-            "Modernicé una app logística, introduje SwiftUI en UIKit y moví tareas de escritorio al móvil.",
+            "Modernicé una app logística, llevé SwiftUI a UIKit y pasé flujos útiles de escritorio a mobile.",
           tags: ["UIKit", "SwiftUI", "Logística"],
         },
       ],
     },
     skills: {
       eyebrow: "Stack",
-      title: "Enfoque técnico",
+      title: "Lo que realmente aporto",
       intro:
-        "El stack importa, pero solo si lleva a un mejor producto y a una base de código que se pueda seguir entregando.",
+        "El stack importa solo si ayuda a construir mejor producto y a mantener el codebase en movimiento.",
       groups: [
         {
-          title: "Base iOS",
-          text: "Plataforma móvil principal y trabajo de interfaz.",
+          title: "Trabajo Apple",
+          text: "iOS es el centro, pero pienso en una superficie Apple más amplia.",
           items: ["Swift", "SwiftUI", "UIKit", "iPadOS"],
         },
         {
-          title: "Entrega de producto",
-          text: "La parte donde las funciones se convierten en software usable.",
+          title: "Producto y entrega",
+          text: "Me importa cómo encaja una feature en el producto, no solo que compile.",
           items: [
             "Implementación de features",
             "Integración de APIs",
-            "Refinamiento de UI",
-            "Lanzamientos",
+            "Refinamiento de interfaz",
+            "Releases",
           ],
         },
         {
-          title: "Visión cross-platform",
-          text: "Útil cuando mobile convive con un stack compartido.",
+          title: "Rango entre dominios",
+          text: "Trabajé en salud, logística y entornos con stack compartido.",
           items: [
+            "Productos de salud",
             "Kotlin Multiplatform",
-            "Equipos distribuidos",
-            "Git workflows",
             "Codebases existentes",
+            "Trabajo remoto",
           ],
         },
       ],
@@ -605,17 +608,17 @@ const translations = {
       eyebrow: "Enfoque",
       title: "Cómo trabajo",
       intro:
-        "Esta parte suele importar más una vez que el filtro de stack desaparece.",
+        "Esta parte importa más una vez que termina el filtro básico por stack.",
       items: [
-        "Priorizo decisiones claras de producto, flujos estables e interfaces que no peleen con el usuario.",
-        "Puedo entrar en un codebase existente y mejorarlo sin fingir que reescribir todo es la respuesta normal.",
-        "Trabajo bien con equipos remotos, comunicación async y restricciones prácticas en vez de ideales.",
-        "La relocalización y la adaptación ya son parte de mi vida, así que el cambio no me desordena.",
+        "Primero intento entender el problema de producto, no solo el ticket.",
+        "Puedo mejorar un codebase existente sin convertir cada problema en una reescritura total.",
+        "Me muevo entre interfaz, implementación y detalles de entrega cuando el producto lo necesita.",
+        "Me adapto rápido a nuevos países, equipos y entornos de trabajo.",
       ],
     },
     languages: {
       eyebrow: "Idiomas",
-      title: "Idiomas humanos",
+      title: "Idiomas hablados",
       items: [
         { name: "Ruso", level: "Nativo" },
         { name: "Inglés", level: "Avanzado" },
@@ -627,60 +630,59 @@ const translations = {
       eyebrow: "Relocalización",
       title: "Contexto profesional y mudanzas",
       intro:
-        "El CV se entiende mejor cuando también se ve la línea de vida real.",
+        "El trabajo se entiende mejor cuando también se ve la línea de vida.",
       items: [
         {
-          period: "May 2025 - Actualidad",
+          period: "May 2025 - Hoy",
           place: "Argentina",
-          text: "Me mudé con mi esposa para construir estabilidad familiar a largo plazo y seguir creciendo internacionalmente.",
+          text: "Me mudé con mi esposa para construir estabilidad a largo plazo y seguir creciendo internacionalmente.",
         },
         {
           period: "Jun 2024 - May 2025",
           place: "Japón",
-          text: "Primer traslado internacional de largo plazo. Etapa intensa de aprendizaje, nuevas rutinas y nuevo entorno.",
+          text: "Mi primera mudanza internacional larga. Etapa fuerte de adaptación, aprendizaje y nuevas rutinas.",
         },
         {
           period: "Antes de 2024",
           place: "Rusia",
-          text: "Ahí construí la base: trabajo por contrato, trabajo en equipo y el paso de aprender a entregar.",
+          text: "Ahí se armó la base: trabajo por contrato, trabajo en equipo y el paso de aprender a entregar.",
         },
       ],
     },
     interests: {
       eyebrow: "Intereses",
       title: "Fuera del trabajo",
-      intro:
-        "Sirve porque los intereses muestran cómo aprende alguien, no porque los hobbies deban verse bonitos.",
+      intro: "Lo dejo porque muestra cómo aprendo y qué mantiene mi atención.",
       items: [
         "Aprendizaje de idiomas",
         "Instrumentos musicales",
         "Libros de ciencia",
         "Ideas de apps personales",
         "Type racing",
-        "Escribir artículos de IT",
+        "Artículos de IT",
         "Manga de horror",
       ],
     },
     gallery: {
-      eyebrow: "Snapshots",
-      title: "Contexto adicional",
+      eyebrow: "Contexto",
+      title: "Señales fuera del CV",
       intro:
-        "No toda señal útil cabe en una lista de bullets. Estas tarjetas agregan contexto sin ensuciar el flujo principal.",
+        "Estas tarjetas no están para decorar. Están para explicar qué me importa y cómo pienso.",
       items: [
         {
           modal: "gallery-coding",
           image: "Resources/Gallery/coding.png",
-          title: "Programando apps móviles",
+          title: "Construyendo apps",
           label: "Trabajo",
-          text: "La más obvia: desarrollo mobile no es solo una línea del CV, sigue siendo donde pongo tiempo serio.",
+          text: "Acá sigue yendo gran parte de mi tiempo serio: software para Apple platforms y detalles de producto.",
           size: "wide",
         },
         {
           modal: "gallery-switch",
           image: "Resources/Gallery/nintendo-switch.png",
           title: "Nintendo Switch",
-          label: "Juegos",
-          text: "Recordatorio de que un buen producto debe sentirse entendible antes que técnico.",
+          label: "Producto",
+          text: "Me fijo en productos que manejan la complejidad sin cargársela al usuario.",
           size: "normal",
         },
         {
@@ -688,7 +690,7 @@ const translations = {
           image: "Resources/Gallery/cv-paper.png",
           title: "CV impreso",
           label: "Carrera",
-          text: "Todavía me gusta ver el trabajo convertido en algo tangible y directo.",
+          text: "La presentación clara importa. Si no puedo explicar mi trabajo directo, está mal contado.",
           size: "normal",
         },
         {
@@ -696,15 +698,15 @@ const translations = {
           image: "Resources/Gallery/argentina-flag.png",
           title: "Argentina",
           label: "Base",
-          text: "Base actual y centro práctico de la siguiente etapa.",
+          text: "Mi base actual y el lugar desde donde construyo la próxima etapa.",
           size: "normal",
         },
         {
           modal: "gallery-nas",
           image: "Resources/Gallery/nas-storage.png",
-          title: "Almacenamiento NAS",
+          title: "NAS storage",
           label: "Sistemas",
-          text: "Me gustan las herramientas que reducen el caos y mantienen los datos bajo control.",
+          text: "Me gustan los sistemas ordenados, predecibles y bajo control.",
           size: "normal",
         },
         {
@@ -712,23 +714,24 @@ const translations = {
           image: "Resources/Gallery/japan.png",
           title: "Japón",
           label: "Relocalización",
-          text: "Una etapa fuerte de crecimiento, no solo un destino.",
+          text: "Fue una etapa seria de adaptación y crecimiento, no solo un cambio de lugar.",
           size: "wide",
         },
         {
           modal: "gallery-kyoto",
           image: "Resources/Gallery/kyoto.png",
           title: "Kioto",
-          label: "Perspectiva",
-          text: "La mezcla de disciplina, historia y precisión deja una impresión por razones obvias.",
+          label: "Criterio",
+          text: "Lugares así afinan mi gusto por la precisión, la estructura y la sobriedad.",
           size: "tall",
         },
       ],
     },
     contact: {
       eyebrow: "Contacto",
-      title: "Si el equipo va en serio, contactame.",
-      copy: "El email es mejor para hablar de roles. GitHub muestra código. Telegram es lo más rápido para una conversación directa.",
+      title:
+        "Si tu equipo necesita un desarrollador Apple-platform con mirada de producto, escribime.",
+      copy: "El email es mejor para conversaciones de contratación. GitHub muestra código público. Telegram es lo más rápido para contacto directo.",
       actions: {
         email: "Enviar email",
         github: "Ver GitHub",
@@ -741,23 +744,23 @@ const translations = {
     facts: [
       {
         index: "01",
-        title: "Entrega práctica de producto",
-        text: "Nada de teatro visual. Trabajo en apps de producción, migraciones y features que tienen que sobrevivir al release.",
-        button: "Por qué importa",
+        title: "Apple platforms, no solo iOS",
+        text: "iOS es mi plataforma principal, pero pienso más amplio: calidad de producto, interfaces y encaje dentro del ecosistema Apple.",
+        button: "Más",
         modal: "profile",
       },
       {
         index: "02",
-        title: "Dominios de salud y servicios",
-        text: "La mayor parte de mi trabajo está en productos médicos y operativos donde la claridad vale más que la decoración.",
-        button: "Abrir detalles",
+        title: "Más que ejecutar tickets",
+        text: "Intento entender por qué importa una feature y cómo debería funcionar, no solo implementar lo escrito.",
+        button: "Detalles",
         modal: "healthcare",
       },
       {
         index: "03",
-        title: "Historia de relocalización",
-        text: "Japón y Argentina no fueron turismo. Fueron mudanzas reales, ciclos de aprendizaje y prueba de adaptación.",
-        button: "Leer más",
+        title: "Mudanza internacional, trabajo estable",
+        text: "Japón y Argentina importan porque muestran adaptación, visión de largo plazo y capacidad para seguir avanzando.",
+        button: "Leer",
         modal: "relocation",
       },
     ],
@@ -766,66 +769,66 @@ const translations = {
     },
     modals: {
       profile: {
-        kicker: "Resumen",
-        title: "Lo que esta página realmente está diciendo",
+        kicker: "Perfil",
+        title: "Cómo me posiciono",
         summary:
-          "Soy un desarrollador iOS con experiencia práctica de producto, sesgo por entregar y una forma de trabajo que encaja mejor con equipos distribuidos que con la presentación vacía.",
-        meta: ["SwiftUI", "UIKit", "Trabajo remoto", "Argentina"],
+          "Soy un desarrollador Apple-platform con iOS en el centro, pero no quiero quedar limitado a ejecutar tickets. Me importan producto, interfaz y entrega útil.",
+        meta: ["Apple platforms", "SwiftUI", "UIKit", "Argentina"],
         image: "Resources/hello.png",
         sections: [
           {
             title: "Valor principal",
-            body: "El punto fuerte no es ser llamativo. Es ser útil: UI entendible, entrega estable y una forma tranquila de lidiar con restricciones reales.",
+            body: "Mi valor no es solo escribir código iOS. Es ser útil entre producto, interfaz y decisiones de entrega, manteniendo una implementación limpia.",
           },
           {
-            title: "Encaje actual",
+            title: "Encaje",
             items: [
-              "Equipos de producto remotos o distribuidos",
-              "Roles iOS con responsabilidad real",
-              "Productos donde la confiabilidad importa más que el show",
+              "Equipos de producto que construyen software real para Apple",
+              "Roles con margen para ownership",
+              "Equipos que valoran claridad y comunicación directa",
             ],
           },
         ],
       },
       healthcare: {
         kicker: "Dominio",
-        title: "Por qué importan salud y servicios",
+        title: "Por qué salud moldeó mi enfoque",
         summary:
-          "Estos productos castigan el pensamiento descuidado. Eso es útil. Obliga a decisiones más claras, UI más clara y mejor comunicación con perfiles no técnicos.",
+          "Los productos médicos y de servicio me obligaron a cuidar claridad, confianza y decisiones calmas. Eso cambió cómo pienso interfaz y calidad de producto.",
         meta: ["Salud", "UX operativa", "Confianza"],
         sections: [
           {
-            title: "Qué cambia el dominio",
+            title: "Qué cambia",
             items: [
-              "Los flujos deben ser claros bajo presión",
+              "Los flujos deben seguir claros bajo presión",
               "La ambigüedad hace perder tiempo y confianza",
-              "Entregar importa, pero equivocarse también",
+              "Las decisiones de producto importan tanto como la implementación",
             ],
           },
           {
-            title: "Qué aporto",
-            body: "Me siento cómodo en productos donde el comportamiento limpio importa más que mostrar ingenio técnico.",
+            title: "Qué me dejo",
+            body: "Me siento cómodo en productos donde la meta no es lucirse, sino hacer software confiable y fácil de usar.",
           },
         ],
       },
       relocation: {
-        kicker: "Contexto de vida",
-        title: "La relocalización ya es real, no hipotética",
+        kicker: "Relocalización",
+        title: "Por qué importa la línea internacional",
         summary:
-          "Ya me mudé entre países con mi familia. Eso importa porque adaptación, comunicación y planificación de largo plazo ya fueron probadas en la vida real.",
-        meta: ["Argentina", "Japón", "Mudanza familiar"],
+          "Ya me mudé entre países con mi familia. Importa porque adaptación, planificación y trabajo sostenido en medio del cambio ya son parte de la vida real.",
+        meta: ["Argentina", "Japón", "Familia"],
         sections: [
           {
-            title: "Por qué importa profesionalmente",
+            title: "Impacto profesional",
             items: [
               "Adaptación rápida a entornos nuevos",
               "Comodidad con comunicación async",
-              "Menor fricción en equipos internacionales",
+              "Trabajo estable durante cambios grandes",
             ],
           },
           {
             title: "Contexto personal",
-            body: "La mudanza a Argentina estuvo ligada a estabilidad familiar y futuro. No es un experimento temporal.",
+            body: "La mudanza a Argentina es parte de una decisión seria de largo plazo, no una prueba temporal.",
           },
         ],
       },
@@ -833,159 +836,160 @@ const translations = {
         kicker: "Rol actual",
         title: "Lifetime Health Plus Care Pvt Ltd",
         summary:
-          "Desarrollé y lancé una app iOS para una startup médica de India.",
-        meta: ["Feb 2024 - Actualidad", "iOS", "Startup médica"],
+          "Construí y lancé una app iOS para una startup médica de India.",
+        meta: ["Feb 2024 - Hoy", "iOS", "Salud"],
         sections: [
           {
-            title: "Foco del trabajo",
+            title: "Qué manejé",
             items: [
               "Desarrollo iOS de producción",
-              "Entrega de producto de salud",
-              "Colaboración remota entre equipos",
+              "Entrega de producto médico",
+              "Colaboración remota",
             ],
           },
           {
             title: "Por qué importa",
-            body: "Es trabajo reciente y práctico ligado a un release real, no un proyecto de aprendizaje.",
+            body: "Es trabajo reciente ligado a un release real. Muestra cómo trabajo hoy, no solo lo que aprendí antes.",
           },
         ],
       },
       reshenie: {
-        kicker: "Trabajo médico con KMP",
+        kicker: "Trabajo KMP",
         title: "Reshenie LLC",
         summary:
-          "Trabajé en varios productos médicos con KMP: una app iPadOS para optometristas y un gabinete personal para pacientes.",
+          "Trabajé en productos médicos con KMP, incluyendo una app de iPad para optometristas y una app para pacientes.",
         meta: ["Verano 2023 - Primavera 2024", "KMP", "iPadOS"],
         sections: [
           {
-            title: "Rango de producto",
+            title: "Rango del trabajo",
             items: [
-              "Herramientas para especialistas",
-              "App para pacientes",
-              "Entorno de stack compartido con Kotlin Multiplatform",
+              "Producto para especialistas",
+              "Producto para pacientes",
+              "Desarrollo con stack compartido y Kotlin Multiplatform",
             ],
           },
           {
-            title: "Qué demostró",
-            body: "Puedo trabajar sobre distintas superficies de producto sin fingir que un solo estilo de arquitectura resuelve todo.",
+            title: "Por qué importa",
+            body: "Este rol mostró que puedo moverme entre superficies de producto y restricciones técnicas distintas sin perder foco.",
           },
         ],
       },
       contract: {
-        kicker: "Trabajo por contrato",
+        kicker: "Contrato",
         title: "Modernización de app logística",
         summary:
-          "Modernicé una aplicación logística, introduje SwiftUI en un codebase UIKit y ayudé a mover parte del flujo del escritorio al móvil.",
+          "Modernicé una app logística, llevé SwiftUI a un codebase UIKit y ayudé a mover flujos útiles de escritorio al móvil.",
         meta: ["2022", "UIKit", "SwiftUI", "Logística"],
         sections: [
           {
             title: "Contribución principal",
             items: [
-              "Agregué componentes SwiftUI dentro de una app UIKit",
-              "Apoyé una modernización sin fantasear con un rewrite",
-              "Moví acciones útiles del negocio al teléfono",
+              "Sumé SwiftUI dentro de una app UIKit existente",
+              "Mejoré el producto sin depender de una reescritura total",
+              "Pasé acciones útiles del negocio al teléfono",
             ],
           },
           {
             title: "Por qué importa",
-            body: "Este es el tipo de trabajo que muchos productos reales necesitan: mejora puntual dentro de un sistema existente e imperfecto.",
+            body: "Mucho trabajo real se ve así: mejorar lo que existe, mantenerlo en movimiento y volver el producto más útil.",
           },
         ],
       },
       "gallery-coding": {
-        kicker: "Hábito de trabajo",
-        title: "Programando apps móviles",
+        kicker: "Trabajo",
+        title: "Construyendo apps",
         summary:
-          "La imagen es obvia, pero el punto sigue siendo válido: paso tiempo serio construyendo, no solo hablando de construir.",
-        meta: ["Swift", "KMP", "Mobile"],
+          "Está acá porque el software para Apple platforms sigue siendo donde pongo tiempo serio y concentrado.",
+        meta: ["Swift", "KMP", "Apple platforms"],
         image: "Resources/Gallery/coding.png",
         sections: [
           {
-            title: "Por qué está acá",
-            body: "Algunos portfolios esconden el trabajo real detrás de decoración. Prefiero que el trabajo se vea.",
+            title: "Por qué está",
+            body: "No quería que la página sonara abstracta. El trabajo mismo tiene que seguir visible.",
           },
         ],
       },
       "gallery-switch": {
-        kicker: "Criterio de producto",
+        kicker: "Producto",
         title: "Nintendo Switch",
         summary:
-          "Un recordatorio simple de que el diseño de producto gana cuando se entiende y se usa bien antes de sentirse ingenioso.",
+          "Me interesan los productos que vuelven más liviana la complejidad para el usuario.",
         meta: ["Juegos", "Diseño de producto"],
         image: "Resources/Gallery/nintendo-switch.png",
         sections: [
           {
-            title: "Por qué pertenece",
-            body: "Los buenos productos de consumo enseñan mucho sobre feedback, ergonomía y cómo la gente solo tolera la complejidad cuando la experiencia se la gana.",
+            title: "Por qué está",
+            body: "Los productos de consumo enseñan mucho sobre claridad, feedback y cómo hacer que un sistema complejo se sienta simple.",
           },
         ],
       },
       "gallery-cv": {
-        kicker: "Material profesional",
+        kicker: "Carrera",
         title: "CV impreso",
         summary:
-          "Todavía me gusta ver el trabajo convertido en algo concreto y directo.",
-        meta: ["CV", "Presentación"],
+          "Me importa presentar el trabajo con claridad, sin esconderlo detrás de efectos ni frases vacías.",
+        meta: ["CV", "Comunicación"],
         image: "Resources/Gallery/cv-paper.png",
         sections: [
           {
-            title: "Por qué pertenece",
-            body: "Una página debería ser tan clara que sobreviva tanto en pantalla como en papel. Si solo funciona con animación, es débil.",
+            title: "Por qué está",
+            body: "Si no puedo explicar el trabajo de forma directa, la presentación es débil. Lo mismo vale para los productos.",
           },
         ],
       },
       "gallery-argentina": {
-        kicker: "Base actual",
+        kicker: "Base",
         title: "Argentina",
-        summary: "Base actual y capítulo serio, no una escala aleatoria.",
-        meta: ["Argentina", "Mudanza familiar"],
+        summary:
+          "Mi base actual y el lugar desde donde construyo la próxima etapa del trabajo.",
+        meta: ["Argentina", "Base actual"],
         image: "Resources/Gallery/argentina-flag.png",
         sections: [
           {
-            title: "Por qué pertenece",
-            body: "La ubicación afecta el ritmo de trabajo, la planificación futura y qué oportunidades realmente tienen sentido.",
+            title: "Por qué está",
+            body: "La ubicación afecta ritmo, planificación y qué oportunidades de largo plazo realmente tienen sentido.",
           },
         ],
       },
       "gallery-nas": {
-        kicker: "Pensamiento en sistemas",
-        title: "Almacenamiento NAS",
+        kicker: "Sistemas",
+        title: "NAS storage",
         summary:
-          "Me gustan las herramientas que reducen el caos y mantienen lo importante organizado.",
+          "Me gustan los sistemas ordenados, predecibles y bajo control.",
         meta: ["Sistemas", "Confiabilidad"],
         image: "Resources/Gallery/nas-storage.png",
         sections: [
           {
-            title: "Por qué pertenece",
-            body: "Esa preferencia también aparece en software: los sistemas predecibles le ganan a los desórdenes ingeniosos.",
+            title: "Por qué está",
+            body: "Esa preferencia también aparece en software. Confío más en la estructura predecible que en el caos ingenioso.",
           },
         ],
       },
       "gallery-japan": {
-        kicker: "Etapa de crecimiento",
+        kicker: "Relocalización",
         title: "Japón",
         summary:
-          "Un período fuerte de crecimiento ligado a aprendizaje, adaptación y reconstrucción de rutinas en un entorno nuevo.",
-        meta: ["Japón", "Relocalización"],
+          "Fue una etapa seria de adaptación, aprendizaje y reconstrucción de rutinas.",
+        meta: ["Japón", "Crecimiento"],
         image: "Resources/Gallery/japan.png",
         sections: [
           {
-            title: "Por qué pertenece",
-            body: "Las mudanzas largas cambian cómo pensás el trabajo, la planificación y lo que de verdad significa resiliencia.",
+            title: "Por qué está",
+            body: "Las mudanzas largas cambian cómo pensás trabajo, estabilidad y progreso bajo cambio.",
           },
         ],
       },
       "gallery-kyoto": {
-        kicker: "Perspectiva",
+        kicker: "Criterio",
         title: "Kioto",
         summary:
-          "La mezcla de disciplina, precisión e historia deja marca por razones evidentes.",
+          "Lugares así afinan mi gusto por la precisión, la estructura y la sobriedad.",
         meta: ["Kioto", "Observación"],
         image: "Resources/Gallery/kyoto.png",
         sections: [
           {
-            title: "Por qué pertenece",
-            body: "El criterio importa. Los lugares moldean el tipo de productos e interfaces que uno empieza a respetar.",
+            title: "Por qué está",
+            body: "El criterio forma parte del trabajo de producto. Los lugares que respeto afectan el tipo de interfaces que quiero construir.",
           },
         ],
       },
@@ -993,10 +997,10 @@ const translations = {
   },
   ru: {
     meta: {
-      title: "Eugene Rozhkov | iOS-разработчик",
+      title: "Eugene Rozhkov | Разработчик под Apple Platform",
     },
     brand: {
-      role: "iOS-разработчик",
+      role: "Разработчик под Apple Platform",
     },
     nav: {
       experience: "Опыт",
@@ -1010,30 +1014,30 @@ const translations = {
       toggleToLight: "Светлая тема",
     },
     hero: {
-      eyebrow: "SwiftUI, UIKit, Kotlin Multiplatform",
+      eyebrow: "SwiftUI, UIKit, Apple Platforms, Kotlin Multiplatform",
       title:
-        "Я делаю iOS-приложения, которые не разваливаются при реальной нагрузке.",
+        "Я делаю продукты под Apple platforms и думаю шире, чем просто исполнение тикетов.",
       summary:
-        "Медицина, логистика и продуктовая разработка. Для меня важны чистый интерфейс, стабильный код и мобильный опыт, которому можно доверять.",
-      primaryCta: "Посмотреть опыт",
-      secondaryCta: "Открыть профиль",
+        "iOS для меня база, но не предел. Я смотрю на продукт, интерфейс и delivery вместе и предпочитаю делать полезный софт, а не ждать точных указаний.",
+      primaryCta: "Смотреть опыт",
+      secondaryCta: "Профиль",
       stats: [
-        { value: "3+", label: "года профессиональной mobile-разработки" },
-        { value: "3", label: "страны, где я уже жил и адаптировался" },
-        { value: "4", label: "естественных языка изучал или использовал" },
+        { value: "4+", label: "года в профессиональной mobile-разработке" },
+        { value: "3", label: "страны, где я жил и адаптировался" },
+        { value: "4", label: "языка, которые я использую или учу" },
       ],
       availability: {
         eyebrow: "Сейчас",
-        title: "Живу в Аргентине, открыт к сильным удаленным командам.",
-        copy: "Я уже переезжал между странами вместе с семьей. Быстро адаптируюсь, говорю прямо и нормально работаю в распределенной среде.",
-        pills: ["Медицинские приложения", "Понимаю KMP", "Async-работа"],
+        title: "Живу в Аргентине, открыт к сильным продуктовым командам.",
+        copy: "Я уже проходил переезды между странами с семьей, поэтому мне привычны изменения, async-работа и долгий горизонт планирования.",
+        pills: ["Apple platforms", "Healthcare", "Product mindset"],
       },
     },
     experience: {
       eyebrow: "Работа",
-      title: "Опыт, который ближе к продакшену, чем к показному портфолио.",
+      title: "Мне лучше всего там, где продукт важен не меньше, чем код.",
       intro:
-        "Важно не название должности. Важно, выдержала ли работа реальных пользователей, реальные ограничения и реальное давление по срокам.",
+        "Роли были разными, но суть одна: выпускать полезный софт, улучшать продукт и делать больше, чем просто выполнять очевидный запрос.",
       viewDetails: "Подробнее",
       items: [
         {
@@ -1042,7 +1046,7 @@ const translations = {
           company: "Lifetime Health Plus Care Pvt Ltd",
           period: "Фев 2024 - сейчас",
           summary:
-            "Разработал и выпустил iOS-приложение для медицинского стартапа из Индии.",
+            "Сделал и выпустил iOS-приложение для медицинского стартапа из Индии.",
           tags: ["iOS", "Медицина", "Remote"],
         },
         {
@@ -1051,8 +1055,8 @@ const translations = {
           company: "Reshenie LLC",
           period: "Лето 2023 - весна 2024",
           summary:
-            "Работал над медицинскими KMP-продуктами: iPad-инструментом для оптометристов и приложением для пациентов.",
-          tags: ["KMP", "iPadOS", "Healthcare"],
+            "Работал над медицинскими KMP-продуктами, включая iPad-приложение для оптометристов и приложение для пациентов.",
+          tags: ["KMP", "iPadOS", "Medical"],
         },
         {
           modal: "contract",
@@ -1060,35 +1064,40 @@ const translations = {
           company: "Индивидуальный предприниматель",
           period: "Весна 2022 - осень 2022",
           summary:
-            "Модернизировал логистическое приложение, внедрил SwiftUI в UIKit и перенес часть desktop-сценариев на телефон.",
+            "Модернизировал логистическое приложение, добавил SwiftUI в UIKit и перенес полезные desktop-сценарии на телефон.",
           tags: ["UIKit", "SwiftUI", "Логистика"],
         },
       ],
     },
     skills: {
       eyebrow: "Стек",
-      title: "Технический фокус",
+      title: "Что я реально приношу",
       intro:
-        "Стек важен только тогда, когда он ведет к лучшему продукту и кодовой базе, которую можно дальше нормально развивать.",
+        "Стек важен только если он помогает делать продукт лучше и не тормозит развитие codebase.",
       groups: [
         {
-          title: "iOS-основа",
-          text: "Главная мобильная платформа и UI-работа.",
+          title: "Работа под Apple",
+          text: "iOS в центре, но я думаю в рамках более широкой Apple-среды.",
           items: ["Swift", "SwiftUI", "UIKit", "iPadOS"],
         },
         {
-          title: "Доставка продукта",
-          text: "Та часть, где фичи превращаются в рабочий софт.",
-          items: ["Реализация фич", "Интеграция API", "Доработка UI", "Релизы"],
+          title: "Продукт и delivery",
+          text: "Мне важно, как фича вписывается в продукт, а не только то, что она собирается.",
+          items: [
+            "Реализация фич",
+            "Интеграция API",
+            "Доработка интерфейса",
+            "Релизы",
+          ],
         },
         {
-          title: "Понимание cross-platform",
-          text: "Полезно, когда mobile живет рядом с shared-стеком.",
+          title: "Работа в разных доменах",
+          text: "У меня есть опыт в медицине, логистике и shared-stack среде.",
           items: [
+            "Медицинские продукты",
             "Kotlin Multiplatform",
-            "Distributed teams",
-            "Git workflows",
             "Существующие codebase",
+            "Удаленная работа",
           ],
         },
       ],
@@ -1097,17 +1106,17 @@ const translations = {
       eyebrow: "Подход",
       title: "Как я работаю",
       intro:
-        "Обычно именно это начинает иметь значение после первого фильтра по стеку.",
+        "Вот эта часть становится важной, когда базовый фильтр по стеку уже пройден.",
       items: [
-        "Я тяготею к понятным продуктовым решениям, стабильным сценариям и интерфейсам, которые не мешают пользователю.",
-        "Могу войти в существующий codebase и улучшать его, не pretending, что полный rewrite — это нормальный ответ на все.",
-        "Нормально работаю с удаленными командами, async-коммуникацией и практическими ограничениями вместо идеальных условий.",
-        "Переезды и адаптация уже часть моей жизни, поэтому перемены меня не выбивают.",
+        "Я сначала стараюсь понять продуктовую задачу, а не только текст тикета.",
+        "Могу улучшать существующий codebase, не превращая каждую проблему в повод для полного переписывания.",
+        "Если продукту нужно, я нормально двигаюсь между интерфейсом, реализацией и delivery-деталями.",
+        "Я быстро адаптируюсь к новым странам, командам и рабочей среде.",
       ],
     },
     languages: {
       eyebrow: "Языки",
-      title: "Естественные языки",
+      title: "Разговорные языки",
       items: [
         { name: "Русский", level: "Родной" },
         { name: "Английский", level: "Продвинутый" },
@@ -1118,22 +1127,22 @@ const translations = {
     journey: {
       eyebrow: "Переезды",
       title: "Контекст карьеры и жизни",
-      intro: "Резюме выглядит честнее, когда видно и реальную жизненную линию.",
+      intro: "Рабочий путь понятнее, когда видна и реальная жизненная линия.",
       items: [
         {
           period: "Май 2025 - сейчас",
           place: "Аргентина",
-          text: "Переехал с женой, чтобы строить семейную стабильность в долгую и продолжать развиваться международно.",
+          text: "Переехал с женой, чтобы строить долгую стабильность и продолжать расти международно.",
         },
         {
           period: "Июн 2024 - май 2025",
           place: "Япония",
-          text: "Первый долгий международный переезд. Сильный этап обучения, новых привычек и новой среды.",
+          text: "Первый долгий международный переезд. Сильный период адаптации, обучения и новых привычек.",
         },
         {
           period: "До 2024",
           place: "Россия",
-          text: "Здесь сформировалась база: контрактная работа, командная работа и переход от обучения к реальным поставкам.",
+          text: "Здесь сформировалась база: контрактная работа, работа в команде и переход от обучения к реальным релизам.",
         },
       ],
     },
@@ -1141,7 +1150,7 @@ const translations = {
       eyebrow: "Интересы",
       title: "Вне работы",
       intro:
-        "Это полезно не ради красоты, а потому что интересы показывают, как человек учится и на что у него хватает внимания.",
+        "Я оставляю этот блок, потому что он показывает, как я учусь и что надолго держит мое внимание.",
       items: [
         "Изучение языков",
         "Музыкальные инструменты",
@@ -1153,25 +1162,25 @@ const translations = {
       ],
     },
     gallery: {
-      eyebrow: "Визуальный контекст",
-      title: "Дополнительная информация",
+      eyebrow: "Контекст",
+      title: "Несколько сигналов вне резюме",
       intro:
-        "Не все полезные сигналы помещаются в список буллетов. Эти карточки добавляют контекст без лишнего шума.",
+        "Эти карточки нужны не для украшения. Они показывают, что для меня важно и как я смотрю на работу.",
       items: [
         {
           modal: "gallery-coding",
           image: "Resources/Gallery/coding.png",
-          title: "Разработка мобильных приложений",
+          title: "Разработка приложений",
           label: "Работа",
-          text: "Самое очевидное: мобильная разработка для меня не просто строка в резюме, а место, куда реально уходит внимание.",
+          text: "Именно сюда до сих пор уходит большая часть моего серьезного внимания: Apple-platform софт и продуктовые детали.",
           size: "wide",
         },
         {
           modal: "gallery-switch",
           image: "Resources/Gallery/nintendo-switch.png",
           title: "Nintendo Switch",
-          label: "Игры",
-          text: "Напоминание о том, что хороший продукт сначала должен быть понятным и удобным, а уже потом технически интересным.",
+          label: "Продукт",
+          text: "Мне интересны продукты, которые умеют скрывать сложность от пользователя.",
           size: "normal",
         },
         {
@@ -1179,7 +1188,7 @@ const translations = {
           image: "Resources/Gallery/cv-paper.png",
           title: "Печатное CV",
           label: "Карьера",
-          text: "Мне все еще нравится видеть работу в прямой и осязаемой форме.",
+          text: "Понятная подача важна. Если я не могу объяснить работу прямо, значит она плохо оформлена.",
           size: "normal",
         },
         {
@@ -1187,15 +1196,15 @@ const translations = {
           image: "Resources/Gallery/argentina-flag.png",
           title: "Аргентина",
           label: "База",
-          text: "Текущая база и практический центр следующего этапа.",
+          text: "Моя текущая база и точка, из которой я строю следующий этап карьеры.",
           size: "normal",
         },
         {
           modal: "gallery-nas",
           image: "Resources/Gallery/nas-storage.png",
-          title: "NAS-хранилище",
+          title: "NAS storage",
           label: "Системы",
-          text: "Мне нравятся инструменты, которые убирают хаос и держат важные данные под контролем.",
+          text: "Мне нравятся системы, которые остаются организованными, предсказуемыми и под контролем.",
           size: "normal",
         },
         {
@@ -1203,23 +1212,24 @@ const translations = {
           image: "Resources/Gallery/japan.png",
           title: "Япония",
           label: "Переезд",
-          text: "Большой этап роста, а не просто точка на карте.",
+          text: "Это был серьезный этап адаптации и роста, а не просто смена локации.",
           size: "wide",
         },
         {
           modal: "gallery-kyoto",
           image: "Resources/Gallery/kyoto.png",
           title: "Киото",
-          label: "Впечатление",
-          text: "Сочетание дисциплины, истории и точности трудно не уважать.",
+          label: "Вкус",
+          text: "Такие места точнее настраивают мой вкус к структуре, точности и сдержанности.",
           size: "tall",
         },
       ],
     },
     contact: {
       eyebrow: "Контакты",
-      title: "Если команда настроена серьезно, пишите.",
-      copy: "Для обсуждения ролей лучше email. GitHub показывает код. Telegram — самый быстрый канал для прямого общения.",
+      title:
+        "Если вашей команде нужен Apple-platform разработчик с продуктовым мышлением, напишите мне.",
+      copy: "Для разговора о найме лучше email. GitHub показывает открытый код. Telegram быстрее всего для прямой связи.",
       actions: {
         email: "Написать email",
         github: "Открыть GitHub",
@@ -1232,23 +1242,23 @@ const translations = {
     facts: [
       {
         index: "01",
-        title: "Практическая доставка продукта",
-        text: "Без визуального театра. Я работаю с продакшен-приложениями, миграциями и фичами, которые должны пережить релиз.",
-        button: "Почему это важно",
+        title: "Apple platforms, не только iOS",
+        text: "iOS для меня основная платформа, но я думаю шире: о качестве продукта, интерфейсе и месте работы внутри Apple-экосистемы.",
+        button: "Еще",
         modal: "profile",
       },
       {
         index: "02",
-        title: "Медицина и сервисные продукты",
-        text: "Большая часть моей работы — в медицинских и операционных продуктах, где ясность важнее украшений.",
-        button: "Открыть детали",
+        title: "Больше, чем исполнение тикетов",
+        text: "Я стараюсь понять, зачем нужна фича и как она должна работать, а не только сделать то, что уже написано.",
+        button: "Детали",
         modal: "healthcare",
       },
       {
         index: "03",
-        title: "История переездов",
-        text: "Япония и Аргентина — это не туризм. Это долгие переезды, циклы обучения и доказанная адаптивность.",
-        button: "Читать дальше",
+        title: "Международный переезд и стабильная работа",
+        text: "Япония и Аргентина важны как доказательство адаптации, длинного горизонта и способности продолжать движение.",
+        button: "Читать",
         modal: "relocation",
       },
     ],
@@ -1257,66 +1267,66 @@ const translations = {
     },
     modals: {
       profile: {
-        kicker: "Кратко",
-        title: "Что эта страница на самом деле говорит",
+        kicker: "Профиль",
+        title: "Как я себя позиционирую",
         summary:
-          "Я iOS-разработчик с практическим продуктовым опытом, сильным уклоном в delivery и рабочим стилем, который лучше подходит распределенным командам, чем пустая презентационность.",
-        meta: ["SwiftUI", "UIKit", "Remote", "Аргентина"],
+          "Я разработчик под Apple platforms, у которого iOS в центре, но я не хочу быть ограничен ролью простого исполнителя тикетов. Мне важны продукт, интерфейс и полезный delivery.",
+        meta: ["Apple platforms", "SwiftUI", "UIKit", "Аргентина"],
         image: "Resources/hello.png",
         sections: [
           {
             title: "Главная ценность",
-            body: "Моя сильная сторона не в эффектности. Она в полезности: понятный UI, стабильная доставка и спокойное отношение к реальным ограничениям.",
+            body: "Моя ценность не только в том, что я пишу iOS-код. Я полезен на стыке продукта, интерфейса и delivery-решений, при этом сохраняя реализацию чистой.",
           },
           {
-            title: "Хорошее совпадение",
+            title: "Где я полезнее всего",
             items: [
-              "Удаленные или распределенные продуктовые команды",
-              "iOS-роли с реальной ответственностью",
-              "Продукты, где надежность важнее показухи",
+              "Продуктовые команды, которые делают реальный софт под Apple",
+              "Роли, где есть пространство для ownership",
+              "Команды, которым важны ясность и прямое общение",
             ],
           },
         ],
       },
       healthcare: {
-        kicker: "Домены",
-        title: "Почему медицина и сервисные продукты важны",
+        kicker: "Домен",
+        title: "Почему медицина повлияла на мой подход",
         summary:
-          "Эти продукты наказывают за небрежное мышление. Это полезно. Они вынуждают принимать более ясные решения, делать более понятный UI и лучше общаться с неинженерными стейкхолдерами.",
+          "Медицинские и сервисные продукты заставили меня серьезнее относиться к ясности, доверию и спокойным решениям. Это изменило мой взгляд на интерфейсы и качество продукта.",
         meta: ["Медицина", "Operational UX", "Доверие"],
         sections: [
           {
-            title: "Что меняется в таком домене",
+            title: "Что это меняет",
             items: [
-              "Сценарии должны быть понятны под давлением",
+              "Сценарии должны оставаться понятными под давлением",
               "Неясность тратит время и доверие",
-              "Релиз важен, но ошибки тоже дорого стоят",
+              "Продуктовые решения важны не меньше реализации",
             ],
           },
           {
-            title: "Что я привношу",
-            body: "Мне комфортно в продуктах, где чистое поведение важнее демонстрации технической изобретательности.",
+            title: "Что я из этого беру",
+            body: "Мне комфортно в продуктах, где цель не производить впечатление, а делать софт надежным и понятным.",
           },
         ],
       },
       relocation: {
-        kicker: "Жизненный контекст",
-        title: "Переезд уже проверен жизнью, а не на словах",
+        kicker: "Переезд",
+        title: "Почему международная линия важна",
         summary:
-          "Я уже переезжал между странами с семьей. Это важно, потому что адаптация, коммуникация и долгосрочное планирование уже проверены на практике.",
+          "Я уже проходил переезды между странами с семьей. Это важно, потому что адаптация, длинный горизонт и работа через изменения для меня уже не теория.",
         meta: ["Аргентина", "Япония", "Семья"],
         sections: [
           {
-            title: "Почему это важно профессионально",
+            title: "Профессиональный эффект",
             items: [
               "Быстрая адаптация к новой среде",
               "Комфорт с async-коммуникацией",
-              "Меньше трения в международных командах",
+              "Стабильная работа во время больших перемен",
             ],
           },
           {
             title: "Личный контекст",
-            body: "Переезд в Аргентину связан с семейной стабильностью и будущим. Это не временный эксперимент.",
+            body: "Переезд в Аргентину - это часть долгого жизненного решения, а не временный эксперимент. Я хочу того же уровня серьезности и от работы.",
           },
         ],
       },
@@ -1324,160 +1334,160 @@ const translations = {
         kicker: "Текущая роль",
         title: "Lifetime Health Plus Care Pvt Ltd",
         summary:
-          "Разработал и выпустил iOS-приложение для медицинского стартапа из Индии.",
-        meta: ["Фев 2024 - сейчас", "iOS", "Medical startup"],
+          "Я сделал и выпустил iOS-приложение для медицинского стартапа из Индии.",
+        meta: ["Фев 2024 - сейчас", "iOS", "Healthcare"],
         sections: [
           {
-            title: "Фокус работы",
+            title: "Что я делал",
             items: [
               "Продакшен iOS-разработка",
-              "Доставка медицинского продукта",
-              "Удаленное взаимодействие между командами",
+              "Delivery медицинского продукта",
+              "Удаленная работа с командой",
             ],
           },
           {
             title: "Почему это важно",
-            body: "Это свежая практическая работа, связанная с реальным релизом, а не учебный проект.",
+            body: "Это свежая продуктовая работа, привязанная к реальному релизу. Она показывает, как я работаю сейчас.",
           },
         ],
       },
       reshenie: {
-        kicker: "Медицинские KMP-проекты",
+        kicker: "KMP-работа",
         title: "Reshenie LLC",
         summary:
-          "Работал над несколькими медицинскими продуктами на KMP: iPadOS-приложением для оптометристов и личным кабинетом пациента.",
+          "Я работал над медицинскими KMP-продуктами, включая iPad-приложение для оптометристов и приложение для пациентов.",
         meta: ["Лето 2023 - весна 2024", "KMP", "iPadOS"],
         sections: [
           {
-            title: "Диапазон продуктов",
+            title: "Диапазон работы",
             items: [
-              "Инструменты для специалистов",
-              "Приложение для пациентов",
-              "Shared-stack среда с Kotlin Multiplatform",
+              "Продукт для специалистов",
+              "Продукт для пациентов",
+              "Разработка в shared-stack среде с Kotlin Multiplatform",
             ],
           },
           {
-            title: "Что это показало",
-            body: "Я могу работать с разными типами продукта, не pretending, что один архитектурный подход решает вообще все.",
+            title: "Почему это важно",
+            body: "Эта роль показала, что я могу работать с разными типами продукта и разными техническими ограничениями без потери фокуса.",
           },
         ],
       },
       contract: {
-        kicker: "Контрактная работа",
+        kicker: "Контракт",
         title: "Модернизация логистического приложения",
         summary:
-          "Модернизировал логистическое приложение, внедрил SwiftUI в UIKit-кодовую базу и помог перенести часть desktop-процессов на телефон.",
+          "Я модернизировал логистическое приложение, добавил SwiftUI в UIKit-codebase и помог перенести полезные desktop-сценарии на мобильное устройство.",
         meta: ["2022", "UIKit", "SwiftUI", "Логистика"],
         sections: [
           {
             title: "Главный вклад",
             items: [
-              "Добавил SwiftUI-компоненты в существующее UIKit-приложение",
-              "Поддержал модернизацию без фантазий про rewrite",
-              "Перенес полезные бизнес-сценарии на мобильное устройство",
+              "Добавил SwiftUI в существующее UIKit-приложение",
+              "Улучшал продукт без зависимости от полного переписывания",
+              "Перенес полезные бизнес-сценарии на телефон",
             ],
           },
           {
             title: "Почему это важно",
-            body: "Это тот тип работы, который нужен многим реальным продуктам: точечное улучшение внутри несовершенной существующей системы.",
+            body: "Очень много реальной работы выглядит именно так: улучшать существующее, не останавливать движение и делать продукт полезнее.",
           },
         ],
       },
       "gallery-coding": {
-        kicker: "Рабочая привычка",
-        title: "Разработка мобильных приложений",
+        kicker: "Работа",
+        title: "Разработка приложений",
         summary:
-          "Картинка очевидная, но смысл все еще важен: я трачу серьезное время на создание, а не только на разговоры о создании.",
-        meta: ["Swift", "KMP", "Mobile"],
+          "Этот блок здесь потому, что софт под Apple platforms по-прежнему занимает у меня серьезное и сфокусированное время.",
+        meta: ["Swift", "KMP", "Apple platforms"],
         image: "Resources/Gallery/coding.png",
         sections: [
           {
             title: "Почему это здесь",
-            body: "Некоторые портфолио прячут саму работу за декорацией. Я предпочитаю, чтобы работа была видна.",
+            body: "Я не хотел, чтобы страница звучала слишком абстрактно. Сама работа должна быть видна.",
           },
         ],
       },
       "gallery-switch": {
-        kicker: "Вкус к продукту",
+        kicker: "Продукт",
         title: "Nintendo Switch",
         summary:
-          "Простое напоминание: продукт выигрывает тогда, когда сначала ощущается понятным и удобным, а уже потом умным.",
+          "Мне интересны продукты, которые умеют делать сложность легче для пользователя.",
         meta: ["Игры", "Product design"],
         image: "Resources/Gallery/nintendo-switch.png",
         sections: [
           {
             title: "Почему это здесь",
-            body: "Хорошие потребительские продукты многое учат про обратную связь, эргономику и то, почему люди терпят сложность только когда опыт это заслужил.",
+            body: "Потребительские продукты хорошо учат ясности, обратной связи и тому, как сложная система может ощущаться простой.",
           },
         ],
       },
       "gallery-cv": {
-        kicker: "Карьерные материалы",
+        kicker: "Карьера",
         title: "Печатное CV",
         summary:
-          "Мне до сих пор нравится видеть работу в прямой, понятной и осязаемой форме.",
-        meta: ["Резюме", "Подача"],
+          "Мне важно уметь подать работу ясно, без эффектов и пустых формулировок.",
+        meta: ["Резюме", "Коммуникация"],
         image: "Resources/Gallery/cv-paper.png",
         sections: [
           {
             title: "Почему это здесь",
-            body: "Страница должна быть настолько ясной, чтобы работать и на экране, и на бумаге. Если она держится только на анимации, значит основа слабая.",
+            body: "Если я не могу объяснить работу прямо, значит подача слабая. С продуктами правило то же самое.",
           },
         ],
       },
       "gallery-argentina": {
-        kicker: "Текущая база",
+        kicker: "База",
         title: "Аргентина",
         summary:
-          "Текущий дом и серьезная следующая глава, а не случайная точка.",
-        meta: ["Аргентина", "Семья"],
+          "Моя текущая база и точка, из которой я строю следующий рабочий этап.",
+        meta: ["Аргентина", "Текущая база"],
         image: "Resources/Gallery/argentina-flag.png",
         sections: [
           {
             title: "Почему это здесь",
-            body: "Локация влияет на рабочий ритм, долгосрочное планирование и на то, какие возможности реально подходят дальше.",
+            body: "Локация влияет на ритм, планирование и на то, какие долгие возможности действительно имеют смысл.",
           },
         ],
       },
       "gallery-nas": {
-        kicker: "Системное мышление",
-        title: "NAS-хранилище",
+        kicker: "Системы",
+        title: "NAS storage",
         summary:
-          "Мне нравятся инструменты, которые убирают хаос и держат важное организованным.",
+          "Мне нравятся системы, которые остаются организованными, предсказуемыми и под контролем.",
         meta: ["Системы", "Надежность"],
         image: "Resources/Gallery/nas-storage.png",
         sections: [
           {
             title: "Почему это здесь",
-            body: "То же предпочтение видно и в софте: предсказуемые системы лучше, чем хитро запутанный беспорядок.",
+            body: "То же предпочтение видно и в софте. Я больше доверяю предсказуемой структуре, чем умному хаосу.",
           },
         ],
       },
       "gallery-japan": {
-        kicker: "Этап роста",
+        kicker: "Переезд",
         title: "Япония",
         summary:
-          "Большой этап роста, связанный с обучением, адаптацией и перестройкой жизни в новой среде.",
-        meta: ["Япония", "Переезд"],
+          "Это был серьезный период адаптации, обучения и перестройки жизни.",
+        meta: ["Япония", "Рост"],
         image: "Resources/Gallery/japan.png",
         sections: [
           {
             title: "Почему это здесь",
-            body: "Долгие переезды меняют то, как ты думаешь о работе, планировании и о реальном смысле устойчивости.",
+            body: "Долгие переезды меняют взгляд на работу, устойчивость и то, как продолжать расти в условиях перемен.",
           },
         ],
       },
       "gallery-kyoto": {
-        kicker: "Впечатление",
+        kicker: "Вкус",
         title: "Киото",
         summary:
-          "Сочетание дисциплины, точности и истории оставляет след по очевидным причинам.",
+          "Такие места точнее настраивают мой вкус к структуре, точности и сдержанности.",
         meta: ["Киото", "Наблюдение"],
         image: "Resources/Gallery/kyoto.png",
         sections: [
           {
             title: "Почему это здесь",
-            body: "Вкус важен. Места формируют то, какие продукты и интерфейсы начинаешь по-настоящему уважать.",
+            body: "Вкус - часть продуктовой работы. Среда, которую я уважаю, влияет на то, какие интерфейсы я хочу делать.",
           },
         ],
       },
