@@ -1507,11 +1507,13 @@ const themeToggle = document.querySelector(".theme-toggle");
 const themeLabel = themeToggle.querySelector(".theme-label");
 const languageButtons = document.querySelectorAll(".lang-button");
 const modalShell = document.getElementById("detail-modal");
+const modalCloseButton = modalShell.querySelector(".modal-close");
 const modalTitle = document.getElementById("modal-title");
 const modalKicker = document.getElementById("modal-kicker");
 const modalSummary = document.getElementById("modal-summary");
 const modalMeta = document.getElementById("modal-meta");
 const modalSections = document.getElementById("modal-sections");
+const modalStage = document.getElementById("modal-stage");
 const modalImage = document.getElementById("modal-image");
 const factGrid = document.getElementById("about");
 const experienceGrid = document.getElementById("experience-grid");
@@ -1521,9 +1523,37 @@ const spokenLanguages = document.getElementById("spoken-languages");
 const journeyTrack = document.getElementById("journey-track");
 const interestCloud = document.getElementById("interest-cloud");
 const galleryGrid = document.getElementById("gallery-grid");
+const prefersReducedMotion =
+  window.matchMedia &&
+  window.matchMedia("(prefers-reduced-motion: reduce)");
+
+document.documentElement.classList.add("motion-ready");
 
 let activeLocale = getInitialLocale();
 let activeTheme = getInitialTheme();
+let parallaxFrame = null;
+let modalCloseTimer = null;
+let lastFocusedElement = null;
+
+const revealObserver =
+  "IntersectionObserver" in window
+    ? new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              return;
+            }
+
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          });
+        },
+        {
+          threshold: 0.18,
+          rootMargin: "0px 0px -8% 0px",
+        },
+      )
+    : null;
 
 function getInitialLocale() {
   try {
@@ -1572,12 +1602,15 @@ function getNestedValue(source, path) {
 
 function updateThemeToggleText() {
   const copy = translations[activeLocale]?.theme || translations.en.theme;
-  const label = activeTheme === "dark" ? copy.toggleToLight : copy.toggleToDark;
+  const currentLabel =
+    activeTheme === "dark" ? copy.toggleToDark : copy.toggleToLight;
+  const actionLabel =
+    activeTheme === "dark" ? copy.toggleToLight : copy.toggleToDark;
 
   themeToggle.dataset.theme = activeTheme;
   themeToggle.setAttribute("aria-pressed", String(activeTheme === "dark"));
-  themeToggle.setAttribute("aria-label", label);
-  themeLabel.textContent = label;
+  themeToggle.setAttribute("aria-label", actionLabel);
+  themeLabel.textContent = currentLabel;
 }
 
 function translateStaticContent(locale) {
@@ -1592,15 +1625,14 @@ function translateStaticContent(locale) {
     }
   });
 
-  const closeButton = modalShell.querySelector(".modal-close");
-  closeButton.setAttribute("aria-label", current.modalLabels.close);
+  modalCloseButton.setAttribute("aria-label", current.modalLabels.close);
 }
 
 function renderFacts(locale) {
   const items = translations[locale].facts
     .map(
       (fact) => `
-        <article class="fact-card">
+        <article class="fact-card" data-reveal>
             <span class="fact-index">${fact.index}</span>
             <h3>${fact.title}</h3>
             <p>${fact.text}</p>
@@ -1618,19 +1650,21 @@ function renderExperience(locale) {
   experienceGrid.innerHTML = data.items
     .map(
       (item) => `
-        <article class="experience-card">
+        <article class="experience-card" data-reveal>
             <div class="experience-top">
+                <span class="experience-period">${item.period}</span>
                 <div>
                     <h3>${item.role}</h3>
-                    <p>${item.company}</p>
+                    <p class="experience-company">${item.company}</p>
                 </div>
-                <span class="experience-period">${item.period}</span>
             </div>
-            <p>${item.summary}</p>
-            <div class="card-tags">
-                ${item.tags.map((tag) => `<span>${tag}</span>`).join("")}
+            <div class="experience-body">
+                <p class="experience-summary">${item.summary}</p>
+                <div class="card-tags">
+                    ${item.tags.map((tag) => `<span>${tag}</span>`).join("")}
+                </div>
+                <button class="experience-button" type="button" data-modal="${item.modal}">${data.viewDetails}</button>
             </div>
-            <button class="experience-button" type="button" data-modal="${item.modal}">${data.viewDetails}</button>
         </article>
     `,
     )
@@ -1641,7 +1675,7 @@ function renderSkillGroups(locale) {
   skillGroups.innerHTML = translations[locale].skills.groups
     .map(
       (group) => `
-        <article class="skill-group">
+        <article class="skill-group" data-reveal>
             <h3>${group.title}</h3>
             <p>${group.text}</p>
             <ul>
@@ -1657,7 +1691,7 @@ function renderStrengths(locale) {
   strengthList.innerHTML = translations[locale].strengths.items
     .map(
       (item) => `
-        <article class="strength-item">
+        <article class="strength-item" data-reveal>
             <p>${item}</p>
         </article>
     `,
@@ -1669,7 +1703,7 @@ function renderLanguages(locale) {
   spokenLanguages.innerHTML = translations[locale].languages.items
     .map(
       (item) => `
-        <article class="language-row">
+        <article class="language-row" data-reveal>
             <strong>${item.name}</strong>
             <span>${item.level}</span>
         </article>
@@ -1682,7 +1716,7 @@ function renderJourney(locale) {
   journeyTrack.innerHTML = translations[locale].journey.items
     .map(
       (item) => `
-        <article class="journey-item">
+        <article class="journey-item" data-reveal>
             <span class="journey-period">${item.period}</span>
             <h3>${item.place}</h3>
             <p>${item.text}</p>
@@ -1696,7 +1730,7 @@ function renderInterests(locale) {
   interestCloud.innerHTML = translations[locale].interests.items
     .map(
       (item) => `
-        <div class="interest-pill">${item}</div>
+        <div class="interest-pill" data-reveal>${item}</div>
     `,
     )
     .join("");
@@ -1706,7 +1740,7 @@ function renderGallery(locale) {
   galleryGrid.innerHTML = translations[locale].gallery.items
     .map(
       (item) => `
-        <button class="gallery-card" type="button" data-modal="${item.modal}" data-size="${item.size}">
+        <button class="gallery-card" type="button" data-modal="${item.modal}" data-size="${item.size}" data-reveal>
             <img class="gallery-image" src="${item.image}" alt="${item.title}">
             <div class="gallery-content">
                 <span class="gallery-label">${item.label}</span>
@@ -1722,7 +1756,7 @@ function renderGallery(locale) {
 function renderModal(key) {
   const modalData = translations[activeLocale].modals[key];
   if (!modalData) {
-    return;
+    return false;
   }
 
   modalKicker.textContent = modalData.kicker;
@@ -1746,7 +1780,10 @@ function renderModal(key) {
     })
     .join("");
 
-  if (modalData.image) {
+  const hasImage = Boolean(modalData.image);
+  modalStage.hidden = !hasImage;
+
+  if (hasImage) {
     modalImage.hidden = false;
     modalImage.src = modalData.image;
     modalImage.alt = modalData.title;
@@ -1755,21 +1792,67 @@ function renderModal(key) {
     modalImage.removeAttribute("src");
     modalImage.alt = "";
   }
+
+  return true;
+}
+
+function getModalTransitionDuration() {
+  return prefersReducedMotion?.matches ? 0 : 320;
+}
+
+function finishModalClose() {
+  window.clearTimeout(modalCloseTimer);
+  modalCloseTimer = null;
+  modalShell.hidden = true;
+  modalShell.setAttribute("aria-hidden", "true");
+  modalShell.dataset.activeModal = "";
+  modalShell.classList.remove("is-visible", "is-closing");
+  document.body.classList.remove("modal-open");
+
+  if (lastFocusedElement && document.contains(lastFocusedElement)) {
+    lastFocusedElement.focus({ preventScroll: true });
+  }
 }
 
 function openModal(key) {
-  renderModal(key);
+  if (!renderModal(key)) {
+    return;
+  }
+  window.clearTimeout(modalCloseTimer);
+  modalCloseTimer = null;
+  lastFocusedElement =
+    document.activeElement instanceof HTMLElement
+      ? document.activeElement
+      : null;
   modalShell.dataset.activeModal = key;
   modalShell.hidden = false;
   modalShell.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
+  modalShell.classList.remove("is-closing");
+
+  window.requestAnimationFrame(() => {
+    modalShell.classList.add("is-visible");
+    modalCloseButton.focus({ preventScroll: true });
+  });
 }
 
 function closeModal() {
-  modalShell.hidden = true;
-  modalShell.setAttribute("aria-hidden", "true");
-  modalShell.dataset.activeModal = "";
-  document.body.classList.remove("modal-open");
+  if (modalShell.hidden || modalShell.classList.contains("is-closing")) {
+    return;
+  }
+
+  modalShell.classList.remove("is-visible");
+  modalShell.classList.add("is-closing");
+
+  if (getModalTransitionDuration() === 0) {
+    finishModalClose();
+    return;
+  }
+
+  modalCloseTimer = window.setTimeout(
+    finishModalClose,
+    getModalTransitionDuration(),
+  );
 }
 
 function setTheme(theme) {
@@ -1821,6 +1904,72 @@ function setLanguage(locale) {
   if (openKey) {
     renderModal(openKey);
   }
+
+  refreshMotionTargets();
+}
+
+function refreshMotionTargets() {
+  const targets = document.querySelectorAll("[data-reveal]");
+  const reducedMotion = prefersReducedMotion?.matches;
+
+  if (revealObserver) {
+    revealObserver.disconnect();
+  }
+
+  targets.forEach((target, index) => {
+    target.style.setProperty(
+      "--reveal-delay",
+      `${Math.min((index % 6) * 70, 350)}ms`,
+    );
+
+    if (reducedMotion || !revealObserver) {
+      target.classList.add("is-visible");
+      return;
+    }
+
+    if (target.getBoundingClientRect().top < window.innerHeight * 0.88) {
+      target.classList.add("is-visible");
+      return;
+    }
+
+    target.classList.remove("is-visible");
+    revealObserver.observe(target);
+  });
+
+  requestParallaxUpdate();
+}
+
+function updateParallax() {
+  const nodes = document.querySelectorAll("[data-parallax]");
+  const reducedMotion = prefersReducedMotion?.matches;
+
+  nodes.forEach((node) => {
+    if (reducedMotion) {
+      node.style.removeProperty("--parallax-shift");
+      return;
+    }
+
+    const rect = node.getBoundingClientRect();
+    const midpoint = rect.top + rect.height / 2;
+    const distanceFromViewportCenter = midpoint - window.innerHeight / 2;
+    const speed = Number(node.dataset.speed || 0.12);
+    const shift = Math.max(
+      -28,
+      Math.min(28, distanceFromViewportCenter * speed * -0.12),
+    );
+
+    node.style.setProperty("--parallax-shift", `${shift.toFixed(2)}px`);
+  });
+
+  parallaxFrame = null;
+}
+
+function requestParallaxUpdate() {
+  if (parallaxFrame !== null) {
+    return;
+  }
+
+  parallaxFrame = window.requestAnimationFrame(updateParallax);
 }
 
 function closeMenu() {
@@ -1879,6 +2028,9 @@ document.addEventListener("keydown", (event) => {
     closeModal();
   }
 });
+
+window.addEventListener("scroll", requestParallaxUpdate, { passive: true });
+window.addEventListener("resize", requestParallaxUpdate);
 
 setLanguage(activeLocale);
 setTheme(activeTheme);
